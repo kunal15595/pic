@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+# Extra folders
+kit/
+release_notes/
