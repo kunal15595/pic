@@ -1,0 +1,7 @@
+_GetFreq: CODE, 528 0 18
+_HighPriority_InterruptHandler: CODE, 8 0 412
+_SetFreq_8MHZ: CODE, 466 0 34
+_main: CODE, 166 0 148
+_LowPriority_InterruptHandler: CODE, 24 0 138
+__initialization: CODE, 420 0 36
+Total: 786
