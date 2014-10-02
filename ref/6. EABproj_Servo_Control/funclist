@@ -1,0 +1,27 @@
+___ftneg: CODE, 5410 0 38
+___abtoft: CODE, 5114 0 96
+___aldiv: CODE, 3202 0 332
+_GetFreq: CODE, 5560 0 18
+_PWM1_Enable: CODE, 5542 0 18
+_PWM1_Config: CODE, 3534 0 288
+_HighPriority_InterruptHandler: CODE, 8 0 5106
+___ftpack: CODE, 4696 0 168
+_main: CODE, 4512 0 184
+___lwtoft: CODE, 5358 0 52
+_LowPriority_InterruptHandler: CODE, 24 0 138
+___ftadd: CODE, 166 0 772
+_SetFreq_500KHZ: CODE, 5486 0 36
+__initialization: CODE, 5210 0 80
+___lbtoft: CODE, 5300 0 58
+_Open1: CODE, 3822 0 236
+_ReadByte1: CODE, 5578 0 4
+_ReadByte2: CODE, 5582 0 4
+_PWM1_Position: CODE, 938 0 480
+_Open2: CODE, 4288 0 224
+___ftmul: CODE, 1418 0 472
+_PWM1_SET_PulseWidth: CODE, 1890 0 454
+___altoft: CODE, 4058 0 230
+___fttol: CODE, 2778 0 424
+___ftge: CODE, 4864 0 144
+___ftdiv: CODE, 2344 0 434
+Total: 10490

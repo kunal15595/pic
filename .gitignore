@@ -29,6 +29,6 @@
 *.app
 
 # Extra folders
-kit/
+ELB_DevelopmentSoftwares/
 release_notes/
 mplab-x-sdk/

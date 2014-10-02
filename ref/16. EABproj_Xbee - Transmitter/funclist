@@ -1,0 +1,10 @@
+___aldiv: CODE, 166 0 476
+_GetFreq: CODE, 1524 0 18
+_HighPriority_InterruptHandler: CODE, 8 0 1352
+_SetFreq_8MHZ: CODE, 1438 0 34
+_main: CODE, 1102 0 152
+_LowPriority_InterruptHandler: CODE, 24 0 138
+__initialization: CODE, 1360 0 68
+_Open1: CODE, 642 0 236
+_Open2: CODE, 878 0 224
+Total: 2698
