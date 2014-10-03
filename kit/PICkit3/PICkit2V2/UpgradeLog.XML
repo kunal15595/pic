@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PICkit2V2">
+</Property><Property Name="Solution File" Value="C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2.sln">
+</Property><Property Name="User Options File" Value="C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2.suo">
+</Property><Property Name="Date" Value="Tuesday, February 07, 2012">
+</Property><Property Name="Time" Value="16:57 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="PICkit2V2.sln" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2.sln">
+</Event><Event ErrorLevel="0" Project="" Source="PICkit2V2.suo" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2.suo">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj" Description="Project file successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\PICkit2V2.csproj">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj.user" Description="Project user file successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\PICkit2V2.csproj.user">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Constants.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Constants.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DeviceData.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DeviceData.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DeviceFile.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DeviceFile.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogAbout.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogAbout.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogAbout.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogAbout.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogCalibrate.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogCalibrate.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogCalibrate.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogCalibrate.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogConfigEdit.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogConfigEdit.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogConfigEdit.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogConfigEdit.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogCustomBaud.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogCustomBaud.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogCustomBaud.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogCustomBaud.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogDevFile.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogDevFile.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogDevFile.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogDevFile.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogLogic.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogLogic.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogLogic.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogLogic.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogPK2Go.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogPK2Go.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogPK2Go.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogPK2Go.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\dialogSounds.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\dialogSounds.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\dialogSounds.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\dialogSounds.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogTrigger.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogTrigger.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogTrigger.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogTrigger.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogTroubleshoot.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogTroubleshoot.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogTroubleshoot.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogTroubleshoot.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUART.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUART.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUART.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUART.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUnitSelect.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUnitSelect.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUnitSelect.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUnitSelect.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUserIDs.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUserIDs.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUserIDs.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUserIDs.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\dsPIC33_PE.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\dsPIC33_PE.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PIC24F_PE.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\PIC24F_PE.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormMultiWinEEData.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormMultiWinEEData.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormMultiWinEEData.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormMultiWinEEData.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormMultiWinProgMem.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormMultiWinProgMem.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormMultiWinProgMem.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormMultiWinProgMem.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormTestMemory.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormTestMemory.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormTestMemory.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormTestMemory.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PIC32MXFunctions.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\PIC32MXFunctions.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\SetOSCCAL.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\SetOSCCAL.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\SetOSCCAL.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\SetOSCCAL.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormPICkit2.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormPICkit2.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormPICkit2.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormPICkit2.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\ImportExportHex.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\ImportExportHex.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PICkitFunctions.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\PICkitFunctions.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Pk2BootLoader.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Pk2BootLoader.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Program.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Program.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\USB.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\USB.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Utilities.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Utilities.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogVDDErase.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogVDDErase.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogVDDErase.Designer.cs" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogVDDErase.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\ClassDiagram1.cd" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Properties\Settings.settings" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Icon1.ico" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Icon1.ico">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Icon2.ico" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Icon2.ico">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Icon3.ico" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Icon3.ico">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogAbout.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogAbout.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogCalibrate.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogCalibrate.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogConfigEdit.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogConfigEdit.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogCustomBaud.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogCustomBaud.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogDevFile.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogDevFile.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogLogic.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogLogic.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogPK2Go.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogPK2Go.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\dialogSounds.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\dialogSounds.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogTrigger.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogTrigger.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogTroubleshoot.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogTroubleshoot.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUART.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUART.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUnitSelect.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUnitSelect.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogUserIDs.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogUserIDs.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormMultiWinEEData.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormMultiWinEEData.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormMultiWinProgMem.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormMultiWinProgMem.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormTestMemory.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormTestMemory.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\FormPICkit2.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\FormPICkit2.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\Properties\Resources.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\DialogVDDErase.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\DialogVDDErase.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\SetOSCCAL.resx" Description="File successfully backed up as C:\PICkit_2\PC_AppV2\PICkit2V2\Backup\PICkit2V2\SetOSCCAL.resx">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PICkit2V2.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="PICkit2V2.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PICkit2V2" Source="PICkit2V2\PICkit2V2.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,81 @@
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\bin\Release\PICkit2V2.exe
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\bin\Release\PICkit2V2.pdb
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\ResolveAssemblyReference.cache
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogAbout.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogCalibrate.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogConfigEdit.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogCustomBaud.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogDevFile.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogLogic.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogPK2Go.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.dialogSounds.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogTrigger.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogTroubleshoot.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUART.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUnitSelect.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUserIDs.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormMultiWinEEData.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormMultiWinProgMem.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormTestMemory.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormPICkit2.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.Properties.Resources.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogVDDErase.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.SetOSCCAL.resources
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\GenerateResource.read.1.tlog
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\GenerateResource.write.1.tlog
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.exe
+C:\PICkit_2\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.pdb
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\bin\Release\PICkit3.exe
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\bin\Release\PICkit3.pdb
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\ResolveAssemblyReference.cache
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogAbout.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogCalibrate.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogConfigEdit.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogCustomBaud.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogDevFile.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogLogic.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogPK2Go.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.dialogSounds.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogTrigger.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogTroubleshoot.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUART.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUnitSelect.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUserIDs.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormMultiWinEEData.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormMultiWinProgMem.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormTestMemory.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormPICkit2.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.Properties.Resources.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogVDDErase.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.SetOSCCAL.resources
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\GenerateResource.read.1.tlog
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\GenerateResource.write.1.tlog
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit3.exe
+C:\PICkit 3 Open Source\Programmer Application\PC_AppV2\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit3.pdb
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit3.exe
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit3.pdb
+C:\Temp\PICkit2V2\PICkit2V2\bin\Release\PICkit3.exe
+C:\Temp\PICkit2V2\PICkit2V2\bin\Release\PICkit3.pdb
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogAbout.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogCalibrate.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogConfigEdit.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogCustomBaud.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogDevFile.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogLogic.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogPK2Go.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.dialogSounds.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogTrigger.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogTroubleshoot.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUART.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUnitSelect.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogUserIDs.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormMultiWinEEData.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormMultiWinProgMem.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormTestMemory.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.FormPICkit2.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.Properties.Resources.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.DialogVDDErase.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\PICkit2V2.SetOSCCAL.resources
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Temp\PICkit2V2\PICkit2V2\obj\x86\Release\GenerateResource.write.1.tlog
