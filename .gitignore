@@ -1,5 +1,4 @@
 
-
 # Compiled Object files
 *.slo
 *.lo
@@ -29,7 +28,15 @@
 *.out
 *.app
 
+*.properties
+*.map
+*.d
+*.elf
+*.hex
+
+
 # Extra folders
 ELB_DevelopmentSoftwares/
 release_notes/
 mplab-x-sdk/
+build/
