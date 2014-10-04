@@ -1,1 +1,3 @@
-build/default/production/ELB_ISR.o: ELB_ISR.c Define.h
+build/default/production/ELB_ISR.o:  \
+ELB_ISR.c  \
+Define.h 

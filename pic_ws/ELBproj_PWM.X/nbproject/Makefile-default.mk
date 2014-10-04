@@ -8,14 +8,10 @@
 
 
 # Include project Makefile
-ifeq "${IGNORE_LOCAL}" "TRUE"
-# do not include local makefile. User is passing all local related variables already
-else
 include Makefile
 # Include makefile containing local settings
 ifeq "$(wildcard nbproject/Makefile-local-default.mk)" "nbproject/Makefile-local-default.mk"
 include nbproject/Makefile-local-default.mk
-endif
 endif
 
 # Environment
@@ -44,18 +40,12 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 # Distribution Directory
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
-# Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=ELB_OSC.c ELB_PWM.c ELBv21_HardwareConfig.c Main.c
-
 # Object Files Quoted if spaced
 OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ELB_OSC.o ${OBJECTDIR}/ELB_PWM.o ${OBJECTDIR}/ELBv21_HardwareConfig.o ${OBJECTDIR}/Main.o
 POSSIBLE_DEPFILES=${OBJECTDIR}/ELB_OSC.o.d ${OBJECTDIR}/ELB_PWM.o.d ${OBJECTDIR}/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/Main.o.d
 
 # Object Files
 OBJECTFILES=${OBJECTDIR}/ELB_OSC.o ${OBJECTDIR}/ELB_PWM.o ${OBJECTDIR}/ELBv21_HardwareConfig.o ${OBJECTDIR}/Main.o
-
-# Source Files
-SOURCEFILES=ELB_OSC.c ELB_PWM.c ELBv21_HardwareConfig.c Main.c
 
 
 CFLAGS=
@@ -72,10 +62,7 @@ LDLIBSOPTIONS=
 FIXDEPS=fixDeps
 
 .build-conf:  ${BUILD_SUBPROJECTS}
-ifneq ($(INFORMATION_MESSAGE), )
-	@echo $(INFORMATION_MESSAGE)
-endif
-	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE} ${MAKE_OPTIONS} -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_PROCESSOR_OPTION=24FJ256GB206
 MP_LINKER_FILE_OPTION=,-Tp24FJ256GB206.gld
@@ -98,71 +85,63 @@ ${OBJECTDIR}/ELB_OSC.o: ELB_OSC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/ELB_OSC.o.d 
 	@${RM} ${OBJECTDIR}/ELB_OSC.o.ok ${OBJECTDIR}/ELB_OSC.o.err 
-	@${RM} ${OBJECTDIR}/ELB_OSC.o 
-	@${FIXDEPS} "${OBJECTDIR}/ELB_OSC.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_OSC.o.d" -o ${OBJECTDIR}/ELB_OSC.o ELB_OSC.c    
+	@${FIXDEPS} "${OBJECTDIR}/ELB_OSC.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_OSC.o.d" -o ${OBJECTDIR}/ELB_OSC.o ELB_OSC.c    
 	
 ${OBJECTDIR}/ELB_PWM.o: ELB_PWM.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/ELB_PWM.o.d 
 	@${RM} ${OBJECTDIR}/ELB_PWM.o.ok ${OBJECTDIR}/ELB_PWM.o.err 
-	@${RM} ${OBJECTDIR}/ELB_PWM.o 
-	@${FIXDEPS} "${OBJECTDIR}/ELB_PWM.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_PWM.o.d" -o ${OBJECTDIR}/ELB_PWM.o ELB_PWM.c    
+	@${FIXDEPS} "${OBJECTDIR}/ELB_PWM.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_PWM.o.d" -o ${OBJECTDIR}/ELB_PWM.o ELB_PWM.c    
 	
 ${OBJECTDIR}/ELBv21_HardwareConfig.o: ELBv21_HardwareConfig.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/ELBv21_HardwareConfig.o.d 
 	@${RM} ${OBJECTDIR}/ELBv21_HardwareConfig.o.ok ${OBJECTDIR}/ELBv21_HardwareConfig.o.err 
-	@${RM} ${OBJECTDIR}/ELBv21_HardwareConfig.o 
-	@${FIXDEPS} "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" -o ${OBJECTDIR}/ELBv21_HardwareConfig.o ELBv21_HardwareConfig.c    
+	@${FIXDEPS} "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" -o ${OBJECTDIR}/ELBv21_HardwareConfig.o ELBv21_HardwareConfig.c    
 	
 ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
-	@${RM} ${OBJECTDIR}/Main.o 
-	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c    
+	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c    
 	
 else
 ${OBJECTDIR}/ELB_OSC.o: ELB_OSC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/ELB_OSC.o.d 
 	@${RM} ${OBJECTDIR}/ELB_OSC.o.ok ${OBJECTDIR}/ELB_OSC.o.err 
-	@${RM} ${OBJECTDIR}/ELB_OSC.o 
-	@${FIXDEPS} "${OBJECTDIR}/ELB_OSC.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_OSC.o.d" -o ${OBJECTDIR}/ELB_OSC.o ELB_OSC.c    
+	@${FIXDEPS} "${OBJECTDIR}/ELB_OSC.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_OSC.o.d" -o ${OBJECTDIR}/ELB_OSC.o ELB_OSC.c    
 	
 ${OBJECTDIR}/ELB_PWM.o: ELB_PWM.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/ELB_PWM.o.d 
 	@${RM} ${OBJECTDIR}/ELB_PWM.o.ok ${OBJECTDIR}/ELB_PWM.o.err 
-	@${RM} ${OBJECTDIR}/ELB_PWM.o 
-	@${FIXDEPS} "${OBJECTDIR}/ELB_PWM.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_PWM.o.d" -o ${OBJECTDIR}/ELB_PWM.o ELB_PWM.c    
+	@${FIXDEPS} "${OBJECTDIR}/ELB_PWM.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_PWM.o.d" -o ${OBJECTDIR}/ELB_PWM.o ELB_PWM.c    
 	
 ${OBJECTDIR}/ELBv21_HardwareConfig.o: ELBv21_HardwareConfig.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/ELBv21_HardwareConfig.o.d 
 	@${RM} ${OBJECTDIR}/ELBv21_HardwareConfig.o.ok ${OBJECTDIR}/ELBv21_HardwareConfig.o.err 
-	@${RM} ${OBJECTDIR}/ELBv21_HardwareConfig.o 
-	@${FIXDEPS} "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" -o ${OBJECTDIR}/ELBv21_HardwareConfig.o ELBv21_HardwareConfig.c    
+	@${FIXDEPS} "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELBv21_HardwareConfig.o.d" -o ${OBJECTDIR}/ELBv21_HardwareConfig.o ELBv21_HardwareConfig.c    
 	
 ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
-	@${RM} ${OBJECTDIR}/Main.o 
-	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c    
+	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c    
 	
 endif
 
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -omf=elf -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -o dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}         -Wl,--defsym=__MPLAB_BUILD=1,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -omf=elf -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -o dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}         -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__MPLAB_DEBUG=1,--defsym=__ICD2RAM=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -omf=elf -mcpu=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}         -Wl,--defsym=__MPLAB_BUILD=1,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION)
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -omf=elf -mcpu=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}         -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION)
 	${MP_CC_DIR}\\pic30-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/ELBproj_PWM.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} -omf=elf
 endif
 

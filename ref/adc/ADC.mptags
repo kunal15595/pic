@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADCAvg	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	146;"	f	line:146	signature:(void)
+ADCAvg	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcprototypes.h	65;"	p	line:65	signature:(void)
+ADCInit	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	115;"	f	line:115	signature:(void)
+ADCInit	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcprototypes.h	63;"	p	line:63	signature:(void)
+ADCStart	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	140;"	f	line:140	signature:(void)
+ADCStart	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcprototypes.h	64;"	p	line:64	signature:(void)
+IOInit	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	133;"	f	line:133	signature:(void)
+IOInit	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcprototypes.h	62;"	p	line:62	signature:(void)
+a	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	71;"	l	line:71
+avg	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	148;"	l	line:148
+c	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	71;"	l	line:71
+main	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	69;"	f	line:69	signature:(void)
+r	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	71;"	l	line:71
+temp	D:\CODE PROJECT\5 code example\CExxx-PIC24F ADC application code example\adcmain.c	148;"	l	line:148

@@ -1,0 +1,23 @@
+# MPLAB IDE generated this makefile for use with Microsoft `nmake'.
+# Project: ADC.mcp
+# Date: Mon Feb 28 10:06:45 2011
+
+AS = pic30-as.exe
+CC = pic30-gcc.exe
+LD = pic30-ld.exe
+AR = pic30-ar.exe
+HX = pic30-bin2hex.exe
+RM = del
+
+"ADC.hex" : "ADC.cof"
+	$(HX) "ADC.cof"
+
+"ADC.cof" : "adcmain.o"
+	$(CC) -mcpu=24FJ128GA010 "adcmain.o" -o"ADC.cof" -Wl,-L"C:\Program Files\Microchip\MPLAB C30\lib",-Tp24FJ128GA010.gld,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__MPLAB_DEBUGGER_REAL_ICE=1,--defsym=__ICD2RAM=1,-Map="ADC.map",--report-mem
+
+"adcmain.o" : "adcprototypes.h" "c:\program files\microchip\mplabc30\v3.25\include\stddef.h" "c:\program files\microchip\mplabc30\v3.25\include\stdlib.h" "c:\program files\microchip\mplabc30\v3.25\support\PIC24F\h\p24FJ128GA010.h" "adcmain.c"
+	$(CC) -mcpu=24FJ128GA010 -x c -c "adcmain.c" -o"adcmain.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -g -Wall
+
+"clean" : 
+	$(RM) "adcmain.o" "ADC.cof" "ADC.hex"
+

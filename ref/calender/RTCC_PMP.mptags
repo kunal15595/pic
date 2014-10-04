@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+DELAY::TMR1=0;while(TMR1<TFLY)	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	89;"	d	line:89
+LCDCMD::0	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	61;"	d	line:61
+LCDDATA::1	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	60;"	d	line:60
+PMDATA::PMDIN1	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	62;"	d	line:62
+RTCC	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	80;"	t	line:80
+TFLY::9000	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	88;"	d	line:88
+_RTCCInterrupt	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtccISR.c	61;"	f	line:61
+_date_str	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\numtoletter.c	67;"	v	line:67
+_time	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\numtoletter.c	63;"	v	line:63
+_time_chk	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\numtoletter.c	64;"	v	line:64
+_time_str	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\numtoletter.c	66;"	v	line:66
+addrLCD::readLCD(LCDCMD)&0x7F	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	68;"	d	line:68
+busyLCD::readLCD(LCDCMD)&0x80	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	67;"	d	line:67
+clrLCD::writeLCD(LCDCMD,1)	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	78;"	d	line:78
+cmdLCD::(c)writeLCD(LCDCMD,(c))	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	75;"	d	line:75
+day	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	70;"	m	line:70	struct:tagRTCC::<anonymous>
+dispfirstLine::(a)writeLCD(LCDCMD,(a&0x0f)|0x	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	82;"	d	line:82
+displayTime	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\numtoletter.c	70;"	f	line:70	signature:(void)
+displayTime	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	60;"	p	line:60	signature:(void)
+dispsecLine::(a)writeLCD(LCDCMD,(a&0x0f)|0x	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	81;"	d	line:81
+dummy	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\lcdfunc.c	94;"	l	line:94
+getLCD::readLCD(LCDDATA)	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	69;"	d	line:69
+hap	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtccISR.c	65;"	l	line:65
+homeLCD::writeLCD(LCDCMD,2)	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	77;"	d	line:77
+hr	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	68;"	m	line:68	struct:tagRTCC::<anonymous>
+i	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtccISR.c	68;"	l	line:68
+initLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	64;"	p	line:64	signature:( void)
+initLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\lcdfunc.c	63;"	f	line:63	signature:( void)
+initRTCC	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtccinit.c	60;"	f	line:60	signature:( void)
+main	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\main.c	68;"	f	line:68	signature:( void)
+mak	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtccISR.c	66;"	l	line:66
+min	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	67;"	m	line:67	struct:tagRTCC::<anonymous>
+mth	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	71;"	m	line:71	struct:tagRTCC::<anonymous>
+prt00	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	75;"	m	line:75	struct:tagRTCC::<anonymous>
+prt01	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	76;"	m	line:76	struct:tagRTCC::<anonymous>
+prt10	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	77;"	m	line:77	struct:tagRTCC::<anonymous>
+prt11	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	78;"	m	line:78	struct:tagRTCC::<anonymous>
+putLCD::(d)writeLCD(LCDDATA,(d))	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	74;"	d	line:74
+putstringLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	85;"	p	line:85	signature:( char *s)
+putstringLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\lcdfunc.c	115;"	f	line:115	signature:( char *s)
+readLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	65;"	p	line:65	signature:( int addr)
+readLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\lcdfunc.c	92;"	f	line:92	signature:( int addr)
+sec	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	66;"	m	line:66	struct:tagRTCC::<anonymous>
+setALARM	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtccinit.c	99;"	f	line:99	signature:( void)
+setLCDC::(a)writeLCD(LCDCMD,(a&0x7F)|0x	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	80;"	d	line:80
+setLCDG::(a)writeLCD(LCDCMD,(a&0x3F)|0x	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	79;"	d	line:79
+tagRTCC	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	64;"	u	line:64
+wkd	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	69;"	m	line:69	struct:tagRTCC::<anonymous>
+writeLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\LCD.h	72;"	p	line:72	signature:( int addr, char c)
+writeLCD	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\lcdfunc.c	105;"	f	line:105	signature:( int addr, char c)
+yr	D:\CODE PROJECT\5 code example\CExxx-PIC24F RTCC and PMP\rtcc.h	72;"	m	line:72	struct:tagRTCC::<anonymous>

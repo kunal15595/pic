@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC24FJ128GA310" mcc_version="v2.0.1">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="package" option="TQFP100"/>
+            <setting name="sorting" option="true"/>
+            <resource customName="IO_RE1" digital="true" direction="OUTPUT" function="RE1" ioc="0" module="GPIO" name="RE1" start="true" type="pin" wpu="false"/>
+            <resource customName="IO_RE2" digital="true" direction="OUTPUT" function="RE2" ioc="0" module="GPIO" name="RE2" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RE3" digital="true" direction="OUTPUT" function="RE3" ioc="0" module="GPIO" name="RE3" start="true" type="pin" wpu="false"/>
+            <file checksum="2438725997" modified="false" name="pin_manager.c" path="mcc_generated_files/pin_manager.c"/>
+            <file checksum="886838398" modified="false" name="pin_manager.h" path="mcc_generated_files/pin_manager.h"/>
+        </manager>
+        <manager generated="true" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="DOZE" option="1:8"/>
+                <setting name="DOZEN" option="disabled"/>
+                <setting name="RCDIV" option="FRC/2"/>
+                <setting name="ROI" option="disabled"/>
+            </initializer>
+            <setting name="DSWDTPS" option="DSWDTPS1F"/>
+            <setting name="DSSWEN" option="ON"/>
+            <setting name="DSWDTOSC" option="LPRC"/>
+            <setting name="DSBOREN" option="ON"/>
+            <setting name="DSWDTEN" option="ON"/>
+            <setting name="WPDIS" option="WPDIS"/>
+            <setting name="WPFP" option="WPFP0"/>
+            <setting name="WPEND" option="WPENDMEM"/>
+            <setting name="VBTBOR" option="ON"/>
+            <setting name="BOREN" option="OFF"/>
+            <setting name="WPCFG" option="WPCFGDIS"/>
+            <setting name="SOSCSEL" option="ON"/>
+            <setting name="WDTWIN" option="PS25_0"/>
+            <setting name="POSCMD" option="NONE"/>
+            <setting name="IESO" option="OFF"/>
+            <setting name="IOL1WAY" option="ON"/>
+            <setting name="FNOSC" option="FRCDIV"/>
+            <setting name="BOREN1" option="DIS"/>
+            <setting name="ALTVREF" option="ALT_AV_ALT_CV"/>
+            <setting name="FCKSM" option="CSDCMD"/>
+            <setting name="OSCIOFCN" option="ON"/>
+            <setting name="WDTPS" option="PS32768"/>
+            <setting name="LPCFG" option="ON"/>
+            <setting name="ICS" option="PGx3"/>
+            <setting name="FWPSA" option="PR128"/>
+            <setting name="WINDIS" option="OFF"/>
+            <setting name="GWRP" option="OFF"/>
+            <setting name="GCP" option="OFF"/>
+            <setting name="FWDTEN" option="WDT_HW"/>
+            <setting name="JTAGEN" option="ON"/>
+            <setting name="Primary Oscillator" option="3500000"/>
+            <setting name="Secondary Oscillator" option="31000"/>
+            <setting name="generateConfigBits" option="true"/>
+            <file checksum="3925354866" modified="false" name="mcc.c" path="mcc_generated_files/mcc.c"/>
+            <file checksum="3377526682" modified="false" name="mcc.h" path="mcc_generated_files/mcc.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module generated="true" mode="TMR" name="TMR1" order="0" reloadPin="auto" type="tmr_16b">
+            <initializer comment="" name="Initialize">
+                <setting name="TMR1" option="0"/>
+                <setting name="PR1" option="178"/>
+                <setting name="TSIDL" option="disabled"/>
+                <setting name="TGATE" option="disabled"/>
+                <setting name="TCKPS" option="1:64"/>
+                <setting name="TSYNC" option="disabled"/>
+                <setting name="TCS" option="FOSC/2"/>
+                <setting name="TECS" option="SOSC"/>
+                <setting name="TON" option="enabled"/>
+                <additionalSetting name="timerFrequency" option="2000000.0"/>
+                <additionalSetting name="tmrPeriod" option="5.69600 ms"/>
+                <additionalSetting name="tmrPeriodValue" option="178"/>
+            </initializer>
+            <setting name="TI" option="false"/>
+            <file checksum="1617297007" modified="false" name="drv_tmr1.c" path="mcc_generated_files/drv_tmr1.c"/>
+            <file checksum="213147465" modified="false" name="drv_tmr1.h" path="mcc_generated_files/drv_tmr1.h"/>
+        </module>
+        <module generated="true" mode="GPIO" name="GPIO" order="1" reloadPin="manual" type="GPIO">
+            <resource customName="IO_RE1" digital="true" direction="OUTPUT" function="RE1" ioc="0" module="GPIO" name="RE1" start="true" type="pin" wpu="false"/>
+            <resource customName="IO_RE2" digital="true" direction="OUTPUT" function="RE2" ioc="0" module="GPIO" name="RE2" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RE3" digital="true" direction="OUTPUT" function="RE3" ioc="0" module="GPIO" name="RE3" start="true" type="pin" wpu="false"/>
+        </module>
+    </modules>
+</configuration>

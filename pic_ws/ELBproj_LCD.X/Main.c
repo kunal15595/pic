@@ -92,19 +92,20 @@ int main(void)
 
     /*** APPLICATION CODE BEGINS ***/
     v_PrintData_U16= 2013;                          // Store some Value to print
-    sprintf(A_Str_U8,"%d ", v_PrintData_U16);       // Print variable to string
-    LCD_WriteString(1, 6, A_Str_U8);                //print varible on Line1
-
-    sprintf(A_Str_U8,"BRIGOSHA TECH.");            // Print variable to string
-    LCD_WriteString(2, 2, A_Str_U8);               //print string on second line second column
+    
 
     /*** ENTER ETERNITY ***/
     while(1)
     {
         /*** RECURRING CODE HERE***/
+        sprintf(A_Str_U8,"%d ", v_PrintData_U16);       // Print variable to string
+        LCD_WriteString(1, 0, A_Str_U8);                //print varible on Line1
+
+        sprintf(A_Str_U8,"BRIGOSHA TECH.");            // Print variable to string
+        LCD_WriteString(2, 2, A_Str_U8);               //print string on second line second column
         //Use TIMER Interrupts to perform time based tasks at fixed interval.
         //Use Peripheral Interrupts to perform event based tasks
-
+        v_PrintData_U16++;
     }
 
 }

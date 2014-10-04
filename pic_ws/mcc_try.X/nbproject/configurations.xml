@@ -26,7 +26,6 @@
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC24FJ256GB210</targetDevice>
         <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC16</languageToolchain>
         <languageToolchainVersion>1.22</languageToolchainVersion>
@@ -37,11 +36,8 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
-        <archiverTool>
-        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
-          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -93,9 +89,6 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
-      <C30-AR>
-        <property key="additional-options-chop-files" value="false"/>
-      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>

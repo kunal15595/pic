@@ -40,7 +40,6 @@
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC24FJ256GB206</targetDevice>
         <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>C30</languageToolchain>
         <languageToolchainVersion>3_24</languageToolchainVersion>
@@ -51,11 +50,8 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
-        <archiverTool>
-        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
-          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
