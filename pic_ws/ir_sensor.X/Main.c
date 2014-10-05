@@ -78,6 +78,7 @@ extern  ts_ELB_Hardware Hardware;                   //Hardware Global Structure
 U16 v_PrintData_U16=0;
 U8 A_Str_U8[50];
 U8 sensor_read;
+unsigned int ADCValue;
 
 int main(void)
 {
@@ -97,15 +98,15 @@ int main(void)
     
 
     LCD_INIT();                                     //Initialize LCD
-    LED1_DIR = DIR_OUT;                    // Set LED1 as Output
-    LED1 = C_OFF;                      	// Set state to OFF
-    RE5_IN;
+//    LED1_DIR = DIR_OUT;                    // Set LED1 as Output
+//    LED1 = C_OFF;                      	// Set state to OFF
+//    RE5_IN;
 
 
-    AD1PCFGL = 0xFE; // Configure A/D port
-    AD1PCFGH = 0xFE; // Configure A/D port
+    
 
     // AN0 input pin is analog
+
     AD1CON1 = 0x2202; // Configure sample clock source
     // and conversion trigger mode.
     // Unsigned Fraction format (FORM<1:0>=10),
@@ -120,14 +121,14 @@ int main(void)
     // Interrupt after every sample
     AD1CON3 = 0x0100; // Configure sample time = 1Tad,
     // A/D conversion clock as Tcy
-    AD1CHS = 0; // Configure input channels,
+    AD1CHS = 1; // Configure input channels,
     // S/H+ input is AN0,
     // S/H- input is Vr- (AVss).
     AD1CSSL = 0; // No inputs are scanned.
     IFS0bits.AD1IF = 0; // Clear A/D conversion interrupt.
     // Configure A/D interrupt priority bits (AD1IP<2:0>) here, if
     // required. Default priority level is 4.
-    IEC0bits.AD1IE = 1; // Enable A/D conversion interrupt
+//    IEC0bits.AD1IE = 1; // Enable A/D conversion interrupt
     AD1CON1bits.ADON = 1; // Turn on A/D
     AD1CON1bits.SAMP = 1; // Start sampling the input
 
@@ -153,14 +154,28 @@ int main(void)
     while(1)
     {
         /*** RECURRING CODE HERE***/
-        sprintf(A_Str_U8,"%d ", v_PrintData_U16);       // Print variable to string
-        LCD_WriteString(1, 0, A_Str_U8);                //print varible on Line1
+//        sprintf(A_Str_U8,"%d ", v_PrintData_U16);       // Print variable to string
+//        LCD_WriteString(1, 0, A_Str_U8);                //print varible on Line1
 
-        sprintf(A_Str_U8,"BRIGOSHA TECH.");            // Print variable to string
-        LCD_WriteString(2, 2, A_Str_U8);               //print string on second line second column
+//        sprintf(A_Str_U8,"BRIGOSHA TECH.");            // Print variable to string
+//        LCD_WriteString(2, 2, A_Str_U8);               //print string on second line second column
         //Use TIMER Interrupts to perform time based tasks at fixed interval.
         //Use Peripheral Interrupts to perform event based tasks
         v_PrintData_U16++;
+
+        AD1CON1bits.SAMP = 1; // start sampling...
+
+        U32 i = 0xFFFF; //sets i to 1048575
+        while (i--); //delay function
+
+        AD1CON1bits.SAMP = 0; // start converting
+        while (!AD1CON1bits.DONE){}; // conversion done?
+        ADCValue = ADC1BUF0; // yes then get ADC value
+
+        LCD_Clear();
+        sprintf(A_Str_U8,"%u ", ADCValue);       // Print variable to string
+        LCD_WriteString(2, 2, A_Str_U8);                //print varible on Line1
+        //
     }
 
 }
