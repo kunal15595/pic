@@ -58,10 +58,11 @@
 **********************************************************************/
 #define USE_AND_OR
 #include "p24fxxxx.h"
+#include "p24FJ256GB206.h"
 #include "incap.h"
 #include "PPS.h"
 
-#if defined(__PIC24FJ256GB110__)
+#if defined(__PIC24FJ256GB206__)
 /*************** COFIGURATION **************************************
 *	Watchdog Timer Disabled
 *	Two Speed Start-up enabled
