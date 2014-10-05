@@ -69,6 +69,7 @@ Disclaimer		:
 #include "ELB_OSC.h"
 #include "ELB_I2C.h"
 #include "ELB_LCD.h"
+#include "ELB_PWM.h"
 
 
 /*** EXTERNAL VARIABLES  ***/
@@ -90,12 +91,25 @@ int main(void)
     /*** CONFIGURE HARDWARE ****/
     Hardware_INIT();                                //Intialize Hardware
     Hardware.ConfigPins_Default();                  //Configure Hardware
-    
 
+    //NOTE: PPS Unlock & Lock Sequence not required when Using  Hardware.ConfigPins_Default()
+//     __builtin_write_OSCCONL(OSCCON & 0xbf);        //UNLCOK PPS
+//        Hardware.ConfigPins_PWM(USE2);              //Configure the PWM Pins to use
+//     __builtin_write_OSCCONL(OSCCON | 0x40);        //LOCK PPS
+
+//      __builtin_write_OSCCONL(OSCCON & 0xbf);        //UNLCOK PPS
+//    Hardware.ConfigPins_Motor(USE1|USE2);
+//    __builtin_write_OSCCONL(OSCCON | 0x40);        //LOCK PPS
+
+    MotA1 = C_ON; // Set state to OFF
+    MotA2 = C_OFF; // Set state to OFF
+    
     /*** INITIALIZE PERIPHERAL ***/
     CLKDIVbits.RCDIV0=0;     //clock divider to 0
-
-    
+//    PWM2_INIT(PWMsrc_FOSC, 10);
+//
+//    PWM2_SET_PulseWidth(5);                        //Set PWM1 Dutycycle Time 5 mSec
+     //To Test, Probe the Pin1 of PWM connector J7
 
     LCD_INIT();                                     //Initialize LCD
 //    LED1_DIR = DIR_OUT;                    // Set LED1 as Output
@@ -122,7 +136,7 @@ int main(void)
     AD1CON3 = 0x0100; // Configure sample time = 1Tad,
     // A/D conversion clock as Tcy
     AD1CHS = 1; // Configure input channels,
-    // S/H+ input is AN0,
+    // S/H+ input is AN1,
     // S/H- input is Vr- (AVss).
     AD1CSSL = 0; // No inputs are scanned.
     IFS0bits.AD1IF = 0; // Clear A/D conversion interrupt.
@@ -130,7 +144,7 @@ int main(void)
     // required. Default priority level is 4.
 //    IEC0bits.AD1IE = 1; // Enable A/D conversion interrupt
     AD1CON1bits.ADON = 1; // Turn on A/D
-    AD1CON1bits.SAMP = 1; // Start sampling the input
+    AD1CON1bits.SAMP = 1; // Start sampling the input   
 
     //this just gives us a little delay between measurements
     U32 i = 0xFFFFF; //sets i to 1048575
@@ -146,13 +160,17 @@ int main(void)
     
 //    sensor_read = LATE;
 
-    /*** APPLICATION CODE BEGINS ***/
+    /*8** APPLICATION CODE BEGINS ***/
     v_PrintData_U16= 2013;                          // Store some Value to print
 
 
     /*** ENTER ETERNITY ***/
     while(1)
     {
+//        MotA1 = C_ON; // Set state to OFF
+//        MotA2 = C_OFF; // Set state to OFF
+
+        
         /*** RECURRING CODE HERE***/
 //        sprintf(A_Str_U8,"%d ", v_PrintData_U16);       // Print variable to string
 //        LCD_WriteString(1, 0, A_Str_U8);                //print varible on Line1

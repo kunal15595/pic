@@ -12,6 +12,7 @@
       <itemPath>ELB_UART.h</itemPath>
       <itemPath>ELBv21_HardwareConfig.h</itemPath>
       <itemPath>ELB_LCD.h</itemPath>
+      <itemPath>ELB_PWM.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -28,6 +29,7 @@
       <itemPath>ELB_UART.c</itemPath>
       <itemPath>ELBv21_HardwareConfig.c</itemPath>
       <itemPath>ELB_LCD.c</itemPath>
+      <itemPath>ELB_PWM.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
