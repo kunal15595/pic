@@ -93,9 +93,9 @@ int main(void)
     Hardware.ConfigPins_Default();                  //Configure Hardware
 
     //NOTE: PPS Unlock & Lock Sequence not required when Using  Hardware.ConfigPins_Default()
-//     __builtin_write_OSCCONL(OSCCON & 0xbf);        //UNLCOK PPS
-//        Hardware.ConfigPins_PWM(USE2);              //Configure the PWM Pins to use
-//     __builtin_write_OSCCONL(OSCCON | 0x40);        //LOCK PPS
+     __builtin_write_OSCCONL(OSCCON & 0xbf);        //UNLCOK PPS
+        Hardware.ConfigPins_PWM(USE2);              //Configure the PWM Pins to use
+     __builtin_write_OSCCONL(OSCCON | 0x40);        //LOCK PPS
 
 //      __builtin_write_OSCCONL(OSCCON & 0xbf);        //UNLCOK PPS
 //    Hardware.ConfigPins_Motor(USE1|USE2);
@@ -106,9 +106,9 @@ int main(void)
     
     /*** INITIALIZE PERIPHERAL ***/
     CLKDIVbits.RCDIV0=0;     //clock divider to 0
-//    PWM2_INIT(PWMsrc_FOSC, 10);
+    PWM2_INIT(PWMsrc_FOSC, 10);
 //
-//    PWM2_SET_PulseWidth(5);                        //Set PWM1 Dutycycle Time 5 mSec
+    PWM2_SET_PulseWidth(5);                        //Set PWM1 Dutycycle Time 5 mSec
      //To Test, Probe the Pin1 of PWM connector J7
 
     LCD_INIT();                                     //Initialize LCD
