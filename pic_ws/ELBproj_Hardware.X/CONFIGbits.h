@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <p24FJ256GB206.h>
 
+
 /****************CONFIGURATION BITS*********************************/
 _CONFIG1(JTAGEN_OFF &GCP_OFF &GWRP_OFF &ICS_PGx2 &FWDTEN_OFF)
 

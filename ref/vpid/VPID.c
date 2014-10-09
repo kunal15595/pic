@@ -61,15 +61,18 @@ INT32 VPIDUpdate(tVPID* pVPID, INT32 nSetpoint, INT32 nFeedback)
     nError = -0x7FFFFFFF;
   else
     nError = lAcc;
+  
   //Determine proportional signal:
   lProportional = nError;
   lProportional -= pVPID->nError1;
   lProportional *= pVPID->nKp;
   lProportional /= 0x10000;
+  
   //Determine integral signal:
   lIntegral = nError;
   lIntegral *= pVPID->nKi;
   lIntegral /= 0x10000;
+  
   //Determine derivative signal:
   lDerivative = pVPID->nError1;
   lDerivative *= -2;
@@ -77,23 +80,29 @@ INT32 VPIDUpdate(tVPID* pVPID, INT32 nSetpoint, INT32 nFeedback)
   lDerivative += pVPID->nError2;
   lDerivative *= pVPID->nKd;
   lDerivative /= 0x10000;
+  
   //Determine drive:
   lAcc = lProportional;
   lAcc += lIntegral;
   lAcc += lDerivative;
+  
   //Add PID result to result in proportion to G term:
   lAcc *= pVPID->nGain;
   lAcc /= 0x10000;
   lAcc += pVPID->nDrive1;
+  
   //Clamp to 32 bits:
   if (lAcc > 0x7FFFFFFF)
     lAcc = 0x7FFFFFFF;
   else if (lAcc < -0x7FFFFFFF)
     lAcc = -0x7FFFFFFF;
+
   //Shift:
   pVPID->nError2 = pVPID->nError1;
   pVPID->nError1 = nError;
   pVPID->nDrive1 = lAcc;
+
+  //return lAcc
   return lAcc;
   }
 

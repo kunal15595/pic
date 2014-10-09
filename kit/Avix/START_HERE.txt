@@ -1,0 +1,74 @@
+
+**************************************************************************************************************
+*                                                                                                            *
+* THE FOLLOWING DIRECTORIES ARE CREATED BY THE INSTALLER:                                                    *
+* ---------------------------------------------------------------------------------------------------------- *
+* _AVIX ............. All AVIX files. Directory contains all files required for application development.     *
+*     Cnfg .......... Contains configuration source file, content depends on distribution type               *
+*     Doc(1) ........ Contains all AVIX and tutorial documentation (pdf format)                              *
+*     Interface ..... Contains all header files to include by application source files                       *
+*     Lib ........... Contains the library with all AVIX code                                                *
+*     SysDef ........ Contains header file with settings to tune application behavior and resource usage     *
+*     Utilities ..... Contains distribution dependent utility files (see README_utilities.txt in this dir)   *
+*                                                                                                            *
+* _avix_tutorial(2)   Contains a generic tutorial application demonstrating many of the AVIX features.       *
+*                     Starting point for the tutorial is file README_tutorial.txt in this directory.         *
+*                     A detailed description of the tutorial is present in file _AVIX\Doc\AVIX_Tutorial.pdf  *
+*                                                                                                            *
+* _dev_board_demos(2) Contains optional controller/development board specific demo applications              *
+*                     demonstrating the use of AVIX on actual hardware. These demo's use controller/board    *
+*                     specific peripherals.                                                                  *
+*                     Starting point for the demo's is file README_dev_board_demos.txt in this directory.    *
+*                                                                                                            *
+* sys_files(2) ...... System files used by the tutorial and/or the demo applications.                        *
+*                                                                                                            *
+*                                                                                                            *
+* ---------------------------------------------------------------------------------------------------------- *
+* HOW TO CREATE AN AVIX BASED APPLICATION:                                                                   *
+* ---------------------------------------------------------------------------------------------------------- *
+* Advised is to start working with the tutorial and the demo applications. These work out of the box.        *
+* These applications can be used as a starting point for a new application.                                  *
+*                                                                                                            *
+*                                                                                                            *
+* ---------------------------------------------------------------------------------------------------------- *
+* IMPORTANT DOCUMENTATION                                                                                    *
+* ---------------------------------------------------------------------------------------------------------- *
+* The following documents are important when working with AVIX:                                              *
+*                                                                                                            *
+* - The user and reference guide (present in directory _AVIX\Doc describes the background of working with    *
+*   AVIX and all functions AVIX offers.                                                                      *
+*                                                                                                            *
+* - The port guide (present in directory _AVIX\Doc) describes how to set up an AVIX based project, the       *
+*   structure of an AVIX based project, how to configure AVIX for the desired performance and optimal        *
+*   memory usage. Furthermore some diverse background information is present in this document. It is         *
+*   strongly advised to read this document!                                                                  *
+*   In case the AVIX port is supported by multiple development environments, for each environment an         *
+*   individual port guide is present where the applicable development environment is part of the file name   *
+*                                                                                                            *
+**************************************************************************************************************
+* (1) Only present when documents are selected for installation (option in setup utility)                    *
+* (2) Only present when tutorial and demo's are selected for installation (option in setup utility)          *
+**************************************************************************************************************
+*                                                                                                            *
+*------------------------------------------------------------------------------------------------------------*
+*          We hope you like working with AVIX and wish you a pleasant time getting acquainted with it.       *
+*------------------------------------------------------------------------------------------------------------*
+*                                                                                                            *
+*                                                                                                            *
+*                        .-------------------------------------------------------.                           *
+*                        |                       AVIX-RT                         |                           *
+*                        |-------------------------------------------------------|                           *
+*                        | web:     www.avix-rt.com                              |                           *
+*                        | e-mail:  info@avix-rt.com     (for general inquiries) |                           *
+*                        |          support@avix-rt.com  (for support questions) |                           *
+*                        | phone:   +31(0)615285177                              |                           *
+*                        | address: AVIX-RT                                      |                           *
+*                        |          Maisveld 84                                  |                           *
+*                        |          5236 VC  's-Hertogenbosch                    |                           *
+*                        |          The Netherlands                              |                           *
+*                        `-------------------------------------------------------'                           *
+*                                                                                                            *
+*                                                                                                            *
+*============================================================================================================*
+*                               AVIX-RT © 2006-2012, All Rights Reserved                                     *
+*============================================================================================================*
