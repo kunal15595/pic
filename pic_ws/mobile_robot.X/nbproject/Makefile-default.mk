@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=avix/samples/_tutoriallMain.c avix/samples/tutorial01_RoundRobin.c avix/samples/tutorial02_RoundRobin.c avix/samples/tutorial03_Preemption.c avix/samples/tutorial04_Timer.c avix/samples/tutorial05_EventFlags.c avix/samples/tutorial06_EventFlags.c avix/samples/tutorial07_Messages.c avix/samples/tutorial08_Pipes.c avix/samples/tutorial09_Exchange.c avix/Cnfg/AVIXConfig.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c elb/ELB_PWM.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c imu/imu_main.c avix/Cnfg/systemSetup.c
+SOURCEFILES_QUOTED_IF_SPACED=avix/samples/_tutoriallMain.c avix/samples/tutorial01_RoundRobin.c avix/samples/tutorial02_RoundRobin.c avix/samples/tutorial03_Preemption.c avix/samples/tutorial04_Timer.c avix/samples/tutorial05_EventFlags.c avix/samples/tutorial06_EventFlags.c avix/samples/tutorial07_Messages.c avix/samples/tutorial08_Pipes.c avix/samples/tutorial09_Exchange.c avix/Cnfg/AVIXConfig.c avix/Cnfg/systemSetup.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c elb/ELB_PWM.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c imu/imu_main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/avix/samples/_tutoriallMain.o ${OBJECTDIR}/avix/samples/tutorial01_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial02_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial03_Preemption.o ${OBJECTDIR}/avix/samples/tutorial04_Timer.o ${OBJECTDIR}/avix/samples/tutorial05_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial06_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial07_Messages.o ${OBJECTDIR}/avix/samples/tutorial08_Pipes.o ${OBJECTDIR}/avix/samples/tutorial09_Exchange.o ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/imu/imu_main.o ${OBJECTDIR}/avix/Cnfg/systemSetup.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/avix/samples/_tutoriallMain.o.d ${OBJECTDIR}/avix/samples/tutorial01_RoundRobin.o.d ${OBJECTDIR}/avix/samples/tutorial02_RoundRobin.o.d ${OBJECTDIR}/avix/samples/tutorial03_Preemption.o.d ${OBJECTDIR}/avix/samples/tutorial04_Timer.o.d ${OBJECTDIR}/avix/samples/tutorial05_EventFlags.o.d ${OBJECTDIR}/avix/samples/tutorial06_EventFlags.o.d ${OBJECTDIR}/avix/samples/tutorial07_Messages.o.d ${OBJECTDIR}/avix/samples/tutorial08_Pipes.o.d ${OBJECTDIR}/avix/samples/tutorial09_Exchange.o.d ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.d ${OBJECTDIR}/elb/ELB_I2C.o.d ${OBJECTDIR}/elb/ELB_ISR.o.d ${OBJECTDIR}/elb/ELB_LCD.o.d ${OBJECTDIR}/elb/ELB_OSC.o.d ${OBJECTDIR}/elb/ELB_Timer.o.d ${OBJECTDIR}/elb/ELB_UART.o.d ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/elb/ELB_PWM.o.d ${OBJECTDIR}/imu/AMGPsensor.o.d ${OBJECTDIR}/imu/BMA150.o.d ${OBJECTDIR}/imu/BMP085.o.d ${OBJECTDIR}/imu/Config_Accel.o.d ${OBJECTDIR}/imu/Config_Gyro.o.d ${OBJECTDIR}/imu/Config_Mag.o.d ${OBJECTDIR}/imu/HMC5883.o.d ${OBJECTDIR}/imu/ITG3050.o.d ${OBJECTDIR}/imu/imu_main.o.d ${OBJECTDIR}/avix/Cnfg/systemSetup.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/avix/samples/_tutoriallMain.o ${OBJECTDIR}/avix/samples/tutorial01_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial02_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial03_Preemption.o ${OBJECTDIR}/avix/samples/tutorial04_Timer.o ${OBJECTDIR}/avix/samples/tutorial05_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial06_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial07_Messages.o ${OBJECTDIR}/avix/samples/tutorial08_Pipes.o ${OBJECTDIR}/avix/samples/tutorial09_Exchange.o ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o ${OBJECTDIR}/avix/Cnfg/systemSetup.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/imu/imu_main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/avix/samples/_tutoriallMain.o.d ${OBJECTDIR}/avix/samples/tutorial01_RoundRobin.o.d ${OBJECTDIR}/avix/samples/tutorial02_RoundRobin.o.d ${OBJECTDIR}/avix/samples/tutorial03_Preemption.o.d ${OBJECTDIR}/avix/samples/tutorial04_Timer.o.d ${OBJECTDIR}/avix/samples/tutorial05_EventFlags.o.d ${OBJECTDIR}/avix/samples/tutorial06_EventFlags.o.d ${OBJECTDIR}/avix/samples/tutorial07_Messages.o.d ${OBJECTDIR}/avix/samples/tutorial08_Pipes.o.d ${OBJECTDIR}/avix/samples/tutorial09_Exchange.o.d ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.d ${OBJECTDIR}/avix/Cnfg/systemSetup.o.d ${OBJECTDIR}/elb/ELB_I2C.o.d ${OBJECTDIR}/elb/ELB_ISR.o.d ${OBJECTDIR}/elb/ELB_LCD.o.d ${OBJECTDIR}/elb/ELB_OSC.o.d ${OBJECTDIR}/elb/ELB_Timer.o.d ${OBJECTDIR}/elb/ELB_UART.o.d ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/elb/ELB_PWM.o.d ${OBJECTDIR}/imu/AMGPsensor.o.d ${OBJECTDIR}/imu/BMA150.o.d ${OBJECTDIR}/imu/BMP085.o.d ${OBJECTDIR}/imu/Config_Accel.o.d ${OBJECTDIR}/imu/Config_Gyro.o.d ${OBJECTDIR}/imu/Config_Mag.o.d ${OBJECTDIR}/imu/HMC5883.o.d ${OBJECTDIR}/imu/ITG3050.o.d ${OBJECTDIR}/imu/imu_main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/avix/samples/_tutoriallMain.o ${OBJECTDIR}/avix/samples/tutorial01_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial02_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial03_Preemption.o ${OBJECTDIR}/avix/samples/tutorial04_Timer.o ${OBJECTDIR}/avix/samples/tutorial05_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial06_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial07_Messages.o ${OBJECTDIR}/avix/samples/tutorial08_Pipes.o ${OBJECTDIR}/avix/samples/tutorial09_Exchange.o ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/imu/imu_main.o ${OBJECTDIR}/avix/Cnfg/systemSetup.o
+OBJECTFILES=${OBJECTDIR}/avix/samples/_tutoriallMain.o ${OBJECTDIR}/avix/samples/tutorial01_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial02_RoundRobin.o ${OBJECTDIR}/avix/samples/tutorial03_Preemption.o ${OBJECTDIR}/avix/samples/tutorial04_Timer.o ${OBJECTDIR}/avix/samples/tutorial05_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial06_EventFlags.o ${OBJECTDIR}/avix/samples/tutorial07_Messages.o ${OBJECTDIR}/avix/samples/tutorial08_Pipes.o ${OBJECTDIR}/avix/samples/tutorial09_Exchange.o ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o ${OBJECTDIR}/avix/Cnfg/systemSetup.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/imu/imu_main.o
 
 # Source Files
-SOURCEFILES=avix/samples/_tutoriallMain.c avix/samples/tutorial01_RoundRobin.c avix/samples/tutorial02_RoundRobin.c avix/samples/tutorial03_Preemption.c avix/samples/tutorial04_Timer.c avix/samples/tutorial05_EventFlags.c avix/samples/tutorial06_EventFlags.c avix/samples/tutorial07_Messages.c avix/samples/tutorial08_Pipes.c avix/samples/tutorial09_Exchange.c avix/Cnfg/AVIXConfig.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c elb/ELB_PWM.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c imu/imu_main.c avix/Cnfg/systemSetup.c
+SOURCEFILES=avix/samples/_tutoriallMain.c avix/samples/tutorial01_RoundRobin.c avix/samples/tutorial02_RoundRobin.c avix/samples/tutorial03_Preemption.c avix/samples/tutorial04_Timer.c avix/samples/tutorial05_EventFlags.c avix/samples/tutorial06_EventFlags.c avix/samples/tutorial07_Messages.c avix/samples/tutorial08_Pipes.c avix/samples/tutorial09_Exchange.c avix/Cnfg/AVIXConfig.c avix/Cnfg/systemSetup.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c elb/ELB_PWM.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c imu/imu_main.c
 
 
 CFLAGS=
@@ -170,6 +170,13 @@ ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o: avix/Cnfg/AVIXConfig.c  nbproject/Makefile-
 	@${RM} ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.ok ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.err 
 	@${RM} ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o 
 	@${FIXDEPS} "${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.d" -o ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o avix/Cnfg/AVIXConfig.c    
+	
+${OBJECTDIR}/avix/Cnfg/systemSetup.o: avix/Cnfg/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/avix/Cnfg 
+	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.d 
+	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.ok ${OBJECTDIR}/avix/Cnfg/systemSetup.o.err 
+	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o 
+	@${FIXDEPS} "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" -o ${OBJECTDIR}/avix/Cnfg/systemSetup.o avix/Cnfg/systemSetup.c    
 	
 ${OBJECTDIR}/elb/ELB_I2C.o: elb/ELB_I2C.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/elb 
@@ -290,13 +297,6 @@ ${OBJECTDIR}/imu/imu_main.o: imu/imu_main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/imu/imu_main.o 
 	@${FIXDEPS} "${OBJECTDIR}/imu/imu_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/imu/imu_main.o.d" -o ${OBJECTDIR}/imu/imu_main.o imu/imu_main.c    
 	
-${OBJECTDIR}/avix/Cnfg/systemSetup.o: avix/Cnfg/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/avix/Cnfg 
-	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.d 
-	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.ok ${OBJECTDIR}/avix/Cnfg/systemSetup.o.err 
-	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o 
-	@${FIXDEPS} "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" -o ${OBJECTDIR}/avix/Cnfg/systemSetup.o avix/Cnfg/systemSetup.c    
-	
 else
 ${OBJECTDIR}/avix/samples/_tutoriallMain.o: avix/samples/_tutoriallMain.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/avix/samples 
@@ -374,6 +374,13 @@ ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o: avix/Cnfg/AVIXConfig.c  nbproject/Makefile-
 	@${RM} ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.ok ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.err 
 	@${RM} ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o 
 	@${FIXDEPS} "${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/avix/Cnfg/AVIXConfig.o.d" -o ${OBJECTDIR}/avix/Cnfg/AVIXConfig.o avix/Cnfg/AVIXConfig.c    
+	
+${OBJECTDIR}/avix/Cnfg/systemSetup.o: avix/Cnfg/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/avix/Cnfg 
+	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.d 
+	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.ok ${OBJECTDIR}/avix/Cnfg/systemSetup.o.err 
+	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o 
+	@${FIXDEPS} "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" -o ${OBJECTDIR}/avix/Cnfg/systemSetup.o avix/Cnfg/systemSetup.c    
 	
 ${OBJECTDIR}/elb/ELB_I2C.o: elb/ELB_I2C.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/elb 
@@ -493,13 +500,6 @@ ${OBJECTDIR}/imu/imu_main.o: imu/imu_main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/imu/imu_main.o.ok ${OBJECTDIR}/imu/imu_main.o.err 
 	@${RM} ${OBJECTDIR}/imu/imu_main.o 
 	@${FIXDEPS} "${OBJECTDIR}/imu/imu_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/imu/imu_main.o.d" -o ${OBJECTDIR}/imu/imu_main.o imu/imu_main.c    
-	
-${OBJECTDIR}/avix/Cnfg/systemSetup.o: avix/Cnfg/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/avix/Cnfg 
-	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.d 
-	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o.ok ${OBJECTDIR}/avix/Cnfg/systemSetup.o.err 
-	@${RM} ${OBJECTDIR}/avix/Cnfg/systemSetup.o 
-	@${FIXDEPS} "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"avix/Interface" -I"avix/Utilities/Interface" -I"elb" -MMD -MF "${OBJECTDIR}/avix/Cnfg/systemSetup.o.d" -o ${OBJECTDIR}/avix/Cnfg/systemSetup.o avix/Cnfg/systemSetup.c    
 	
 endif
 
