@@ -34,7 +34,7 @@
 
 /*** BRIGOSHA LIBRARY ***/
 #include "Define.h"
-#include "CONFIGbits.h"
+//#include "CONFIGbits.h"
 
 #include "ELBv21_HardwareConfig.h"
 #include "ELB_OSC.h"
@@ -48,7 +48,7 @@
 /*** EXTERNAL VARIABLES  ***/
 extern  ts_ELB_Hardware Hardware;                   //Hardware Global Structure
 
-extern V_T1IntFlag_U8;    
+extern U8 V_T1IntFlag_U8;
 
 //	-----------------------------------------------------------------------------------------------
 //	External function declarations.
@@ -109,11 +109,11 @@ void avixMain(void)
 	avixError_SetHandler(myErrorFunc);	
 	
         /*** CONFIGURE OSCILLATOR ***/
-    SET_FreqOsc( FRCDIV_250KHZ );               //Set frequency using macros from ELB Lib
+//    SET_FreqOsc( FRCDIV_250KHZ );               //Set frequency using macros from ELB Lib
 
     /*** CONFIGURE HARDWARE ****/
-     Hardware_INIT();                            //Initialise Hardware functions
-     Hardware.ConfigPins_Default();              //Configure Default Hardware for ELB
+//     Hardware_INIT();                            //Initialise Hardware functions
+//     Hardware.ConfigPins_Default();              //Configure Default Hardware for ELB
 
      /*** INITIALIZE PERIPHERAL ***/
      TIMER1_INIT( 1000, TMR_INT_PRI1 );          //Set Timer1, check the calculator in prog guide

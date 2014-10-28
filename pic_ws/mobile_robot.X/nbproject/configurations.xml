@@ -7,6 +7,25 @@
       <logicalFolder name="f3" displayName="astar" projectFiles="true">
       </logicalFolder>
       <logicalFolder name="f2" displayName="avix" projectFiles="true">
+        <itemPath>avix/Interface/AVIX.h</itemPath>
+        <itemPath>avix/Interface/AVIXError.h</itemPath>
+        <itemPath>avix/Interface/AVIXEvent.h</itemPath>
+        <itemPath>avix/Interface/AVIXExchange.h</itemPath>
+        <itemPath>avix/Interface/AVIXGeneric.h</itemPath>
+        <itemPath>avix/Interface/AVIXMemory.h</itemPath>
+        <itemPath>avix/Interface/AVIXMsg.h</itemPath>
+        <itemPath>avix/Interface/AVIXMutex.h</itemPath>
+        <itemPath>avix/Interface/AVIXObjectManager.h</itemPath>
+        <itemPath>avix/Interface/AVIXPipe.h</itemPath>
+        <itemPath>avix/Interface/AVIXPortDef.h</itemPath>
+        <itemPath>avix/Interface/AVIXPower.h</itemPath>
+        <itemPath>avix/Interface/AVIXSemaphore.h</itemPath>
+        <itemPath>avix/Interface/AVIXSharedDefs.h</itemPath>
+        <itemPath>avix/Interface/AVIXThread.h</itemPath>
+        <itemPath>avix/Interface/AVIXTimer.h</itemPath>
+        <itemPath>avix/SysDef/AVIXSystemSettings.h</itemPath>
+        <itemPath>avix/Utilities/Interface/AVIXAtomicSFR.h</itemPath>
+        <itemPath>avix/Utilities/Interface/AVIX_LCD.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="elb" projectFiles="true">
         <itemPath>elb/ELB_I2C.h</itemPath>
@@ -15,8 +34,9 @@
         <itemPath>elb/ELB_Timer.h</itemPath>
         <itemPath>elb/ELB_UART.h</itemPath>
         <itemPath>elb/ELBv21_HardwareConfig.h</itemPath>
-        <itemPath>Define.h</itemPath>
-        <itemPath>CONFIGbits.h</itemPath>
+        <itemPath>elb/CONFIGbits.h</itemPath>
+        <itemPath>elb/Define.h</itemPath>
+        <itemPath>elb/ELB_PWM.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="imu" projectFiles="true">
         <itemPath>imu/AMGPsensor.h</itemPath>
@@ -55,6 +75,8 @@
           <itemPath>avix/samples/tutorial08_Pipes.c</itemPath>
           <itemPath>avix/samples/tutorial09_Exchange.c</itemPath>
         </logicalFolder>
+        <itemPath>avix/Cnfg/AVIXConfig.c</itemPath>
+        <itemPath>avix/Cnfg/systemSetup.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="elb" projectFiles="true">
         <itemPath>elb/ELB_I2C.c</itemPath>
@@ -64,6 +86,7 @@
         <itemPath>elb/ELB_Timer.c</itemPath>
         <itemPath>elb/ELB_UART.c</itemPath>
         <itemPath>elb/ELBv21_HardwareConfig.c</itemPath>
+        <itemPath>elb/ELB_PWM.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="imu" projectFiles="true">
         <itemPath>imu/AMGPsensor.c</itemPath>
@@ -91,6 +114,11 @@
     <Elem>elb</Elem>
     <Elem>avix/samples</Elem>
     <Elem>imu</Elem>
+    <Elem>avix/Interface</Elem>
+    <Elem>avix/SysDef</Elem>
+    <Elem>avix/Utilities/Interface</Elem>
+    <Elem>avix/Utilities/Src</Elem>
+    <Elem>avix/Cnfg</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -101,8 +129,8 @@
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
-        <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion>1.22</languageToolchainVersion>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3_24</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
@@ -142,35 +170,33 @@
         <property key="enable-short-double" value="false"/>
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="avix\Interface;avix\Utilities\Interface;elb"/>
         <property key="isolate-each-function" value="false"/>
-        <property key="keep-inline" value="false"/>
-        <property key="oXC16gcc-align-arr" value="false"/>
-        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
-        <property key="oXC16gcc-data-sects" value="false"/>
-        <property key="oXC16gcc-errata" value=""/>
-        <property key="oXC16gcc-fillupper" value=""/>
-        <property key="oXC16gcc-large-aggregate" value="false"/>
-        <property key="oXC16gcc-mauxflash" value="false"/>
-        <property key="oXC16gcc-mpa-lvl" value=""/>
-        <property key="oXC16gcc-name-text-sec" value=""/>
-        <property key="oXC16gcc-near-chars" value="false"/>
-        <property key="oXC16gcc-no-isr-warn" value="false"/>
-        <property key="oXC16gcc-sfr-warn" value="false"/>
-        <property key="oXC16gcc-smar-io-lvl" value="1"/>
-        <property key="oXC16gcc-smart-io-fmt" value=""/>
         <property key="optimization-level" value="0"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros" value=""/>
         <property key="scalar-model" value="default"/>
-        <property key="use-cci" value="false"/>
-        <property key="use-iar" value="false"/>
       </C30>
-      <C30-AR>
-        <property key="additional-options-chop-files" value="false"/>
-      </C30-AR>
       <C30-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC16asm-extra-opts" value=""/>
+        <property key="oXC16asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
       </C30-AS>
       <C30-LD>
         <property key="additional-options-use-response-files" value="false"/>
@@ -218,17 +244,85 @@
         <property key="warn-section-align" value="false"/>
       </C30-LD>
       <C30Global>
-        <property key="common-include-directories" value=""/>
-        <property key="dual-boot-partition" value="0"/>
         <property key="fast-math" value="false"/>
-        <property key="generic-16-bit" value="false"/>
         <property key="legacy-libc" value="false"/>
-        <property key="oXC16glb-macros" value=""/>
         <property key="output-file-format" value="elf"/>
-        <property key="relaxed-math" value="false"/>
-        <property key="save-temps" value="false"/>
       </C30Global>
       <PICkit3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CLOCK CONTROL" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="CRC" value="true"/>
+        <property key="CTMU" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C2" value="true"/>
+        <property key="I2C3" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INPUT CAPTURE 6" value="true"/>
+        <property key="INPUT CAPTURE 7" value="true"/>
+        <property key="INPUT CAPTURE 8" value="true"/>
+        <property key="INPUT CAPTURE 9" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="OUTPUT COMPARE 6" value="true"/>
+        <property key="OUTPUT COMPARE 7" value="true"/>
+        <property key="OUTPUT COMPARE 8" value="true"/>
+        <property key="OUTPUT COMPARE 9" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="RTCC" value="true"/>
+        <property key="SPI 1" value="true"/>
+        <property key="SPI 2" value="true"/>
+        <property key="SPI 3" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART 1" value="true"/>
+        <property key="UART 2" value="true"/>
+        <property key="UART 3" value="true"/>
+        <property key="UART 4" value="true"/>
+        <property key="UCNFG1" value="true"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x2abf7"/>
+        <property key="memories.programmemory.start" value="0x0"/>
+        <property key="memories.userotp" value="false"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x2abf7"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x0"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
       </PICkit3PlatformTool>
     </conf>
   </confs>

@@ -17,7 +17,7 @@
 /*** MICROCHIP LIBRARY ***/
 #include <stdio.h>
 #include <stdlib.h>
-#include <p24FJ256GB206.h>
+#include <p24FJ256GB210.h>
 #include <libpic30.h>
 
 /*** BRIGOSHA LIBRARY ***/

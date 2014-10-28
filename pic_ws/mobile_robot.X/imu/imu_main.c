@@ -59,7 +59,7 @@ Disclaimer		:
 /*** MICROCHIP LIBRARY ***/
 #include <stdio.h>
 #include <stdlib.h>
-#include <p24FJ256GB206.h>
+#include <p24FJ256GB210.h>
 #include <pic24f_periph_features.h>
 #include <ports.h>
 #include <PPS.h>
@@ -67,7 +67,7 @@ Disclaimer		:
 
 /*** BRIGOSHA LIBRARY ***/
 #include "Define.h"
-#include "CONFIGbits.h"
+//#include "CONFIGbits.h"
 
 #include "ELBv21_HardwareConfig.h"
 #include "ELB_OSC.h"
@@ -85,16 +85,16 @@ extern U8 V_T23IntFlag_U8;                              //Set in TIMER ISR in fi
 F32 V_Pitch_F32 = 0;
 
 /*____________________________________________________________________________*/
-int main (void)
+int imu_main (void)
 {
     /*** LOCAL VARIABLES ***/    
 
     /*** CONFIGURE OSCILLATOR ***/
-    SET_FreqOsc( FRCDIV_1MHZ );                         //Set frequency of 1 MHZ
+//    SET_FreqOsc( FRCDIV_1MHZ );                         //Set frequency of 1 MHZ
     
     /*** CONFIGURE HARDWARE ****/
-    Hardware_INIT();                                    //Initialise Hardware functions
-    Hardware.ConfigPins_Default();                      //Configure Default Hardware for ELB
+//    Hardware_INIT();                                    //Initialise Hardware functions
+//    Hardware.ConfigPins_Default();                      //Configure Default Hardware for ELB
 
     /*** INITIALIZE PERIPHERAL ***/
     TIMER23_INIT(100, TMR_INT_PRI1);                    //Proivde timer period in millisecond

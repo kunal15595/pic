@@ -32,7 +32,7 @@
 
 /*** BRIGOSHA LIBRARY ***/
 #include "Define.h"
-#include "CONFIGbits.h"
+//#include "CONFIGbits.h"
 
 #include "ELBv21_HardwareConfig.h"
 #include "ELB_OSC.h"
@@ -40,7 +40,7 @@
 #include "ELB_LCD.h"
 #include "ELB_PWM.h"
 
-extern V_T1IntFlag_U8;
+extern U8 V_T1IntFlag_U8;
 
 
 //	------------------------------------------------------------------------------------------------

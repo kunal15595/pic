@@ -14,7 +14,7 @@
 #ifndef ELB_TIMER_H
 #define	ELB_TIMER_H
 
-#include <p24FJ256GB206.h>
+#include <p24FJ256GB210.h>
 #include "Define.h"
 #include "ELB_Osc.h"
 

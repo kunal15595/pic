@@ -15,7 +15,7 @@
 #define	ELBV21_HARDWARECONFIG_H
 
 /*** MICROCHIP LIBRARY ***/
-#include <p24FJ256GB206.h>
+#include <p24FJ256GB210.h>
 #include <ports.h>
 #include <PPS.h>
 

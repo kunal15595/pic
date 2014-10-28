@@ -14,7 +14,7 @@
 #define __CONFIG_UART_H
  
 #include "p24Fxxxx.h"
-#include "p24FJ256GB206.h"
+#include "p24FJ256GB210.h"
 
 #include "Define.h"
 #include "ELB_Osc.h"

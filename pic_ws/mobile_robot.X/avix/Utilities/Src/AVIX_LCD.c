@@ -120,7 +120,7 @@
 ** have different ADC capabilities and thus different ADPCFG register names.
 ** For this reason the following part 
 */
-#if defined(__PIC24FJ128GA010__)
+#if defined(__PIC24FJ256GB210__)
 	#define ADCRegister		AD1PCFG		// ADC Pin Configuration register for 24FJ128GA010
 #elif defined(__PIC24HJ256GP610__)
 	#define ADCRegister		AD1PCFGL	// ADC Pin Configuration register for 24HJ256GP610

@@ -39,3 +39,9 @@ ELB_DevelopmentSoftwares/
 release_notes/
 mplab-x-sdk/
 build/
+PICkit3/
+dist/
+nbproject/
+production/
+libpPIC24F/
+
