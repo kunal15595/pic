@@ -4,6 +4,9 @@
 #include "Define.h"
 
 /*** GLOBAL VARIABLES ***/
+U8 V_Rx2IntFlag_U8;
+U8 V_Rx1IntFlag_U8;
+
 U8 V_T1IntFlag_U8=0;        //Interrupt Flag for Push Button
 
 U8 V_T23IntFlag_U8;

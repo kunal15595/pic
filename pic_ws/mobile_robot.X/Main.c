@@ -64,7 +64,7 @@ Disclaimer		:
 
 /*** BRIGOSHA LIBRARY ***/
 #include "Define.h"
-#include "CONFIGbits.h"
+//#include "CONFIGbits.h"
 
 #include "ELBv21_HardwareConfig.h"
 #include "ELB_OSC.h"
@@ -78,7 +78,7 @@ extern U8 V_Rx2IntFlag_U8;                                                      
 /*** GLOBAL VARIABLES ***/
 
 /*____________________________________________________________________________*/
-int main(void)
+int d_main(void)
 {
     /*** LOCAL VARIABLES ***/
     U8 v_Rx1Data_U8=0;
