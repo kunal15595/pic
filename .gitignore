@@ -44,4 +44,5 @@ dist/
 nbproject/
 production/
 libpPIC24F/
+!AVIX_PIC24-dsPIC_MICROCHIP_MPLAB_FD_050000_PIC24FJ256GB210_FH.a
 
