@@ -126,6 +126,7 @@
       <logicalFolder name="f7" displayName="xbee" projectFiles="true">
         <itemPath>xbee/xbee.c</itemPath>
       </logicalFolder>
+      <itemPath>Main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -263,7 +264,7 @@
         <property key="general-code-protect" value="no_code_protect"/>
         <property key="general-write-protect" value="no_write_protect"/>
         <property key="generate-cross-reference-file" value="false"/>
-        <property key="heap-size" value=""/>
+        <property key="heap-size" value="512"/>
         <property key="input-libraries" value=""/>
         <property key="linker-stack" value="true"/>
         <property key="linker-symbols" value=""/>

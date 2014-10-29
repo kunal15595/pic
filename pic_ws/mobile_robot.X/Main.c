@@ -56,7 +56,7 @@ Disclaimer		:
 /***********DO NOT REMOVE **********/
 
 /*** MICROCHIP LIBRARY ***/
-#include <p24FJ256GB206.h>
+#include <p24FJ256GB210.h>
 #include <pic24f_periph_features.h>
 #include <ports.h>
 #include <stdio.h>
