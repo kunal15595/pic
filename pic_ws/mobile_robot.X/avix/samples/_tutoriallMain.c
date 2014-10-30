@@ -70,7 +70,7 @@ extern void t09Exchange(void);
 //	-----------------------------------------------------------------------------------------------
 //	Global variables used by the different tutorial  applications. Read the tutorial application to
 //	learn what it does with these variables and watch the variables in the development environment
-//	watch window to observe the tutorial behavior. Variable tutorialId will hold the number of the 
+//	watch window to observe the tutorial behavior. Variable tutorialId will hold the number of the
 //	selected tutorial.
 //	-----------------------------------------------------------------------------------------------
 volatile int	tutorialId;
@@ -100,14 +100,15 @@ void myErrorFunc(tavixErrorCode errorCode)
 //	Main function for AVIX based project. From here specific selected tutorial function is called.
 //	===============================================================================================
 //
+int astar_test_main();
 void avixMain(void)
 {
 	//---------------------------------------------------------------------------------------------
 	// Setup the system and install an AVIX central error handler.
 	//---------------------------------------------------------------------------------------------
 	systemSetup();
-	avixError_SetHandler(myErrorFunc);	
-	
+	avixError_SetHandler(myErrorFunc);
+
         /*** CONFIGURE OSCILLATOR ***/
 //    SET_FreqOsc( FRCDIV_250KHZ );               //Set frequency using macros from ELB Lib
 
@@ -119,13 +120,13 @@ void avixMain(void)
      TIMER1_INIT( 1000, TMR_INT_PRI1 );          //Set Timer1, check the calculator in prog guide
                                                  //for available TimerTicks at Set Frequency
 
-     
+
 	//---------------------------------------------------------------------------------------------
-	// Select the desired tutorial by setting the number of the desired tutorial in variable 
+	// Select the desired tutorial by setting the number of the desired tutorial in variable
 	// tutorialId. This variable is set in the development environment watch window.
 	//---------------------------------------------------------------------------------------------
 	tutorialId = 1;
-
+        astar_test_main();
 	if (tutorialId ==  1)	{t01RoundRobinScheduling();	}
 	if (tutorialId ==  2)	{t02RoundRobinScheduling();	}
 	if (tutorialId ==  3)	{t03Preemption();			}
@@ -151,15 +152,15 @@ void avixMain(void)
 //	RESERVED.  THE SOFTWARE IS SUPPLIED TO YOU (THE "CUSTOMER")  FOR USE  SOLELY AND EXCLUSIVELY AS
 //	PART OF AND TOGETHER WITH PRODUCTS MANUFACTURED BY "COMPANY" AND LICENSED TO "CUSTOMER".
 //
-//	THE SOFTWARE IS PROVIDED ON AN AS-IS BASIS WITHOUT  CHARGE AND IS SUBJECT TO ALTERATIONS. IT IS 
-//	THE "CUSTOMERS" OBLIGATION TO FULLY TEST THE SOFTWARE IN ITS ENVIRONMENT AND TO  ENSURE  PROPER 
+//	THE SOFTWARE IS PROVIDED ON AN AS-IS BASIS WITHOUT  CHARGE AND IS SUBJECT TO ALTERATIONS. IT IS
+//	THE "CUSTOMERS" OBLIGATION TO FULLY TEST THE SOFTWARE IN ITS ENVIRONMENT AND TO  ENSURE  PROPER
 //	FUNCTIONALITY, QUALIFICATION AND COMPLIANCE WITH COMPONENT SPECIFICATIONS.
 //
-//	IN  THE  EVENT  THE  SOFTWARE  DELIVERABLE  INCLUDES THE  USE OF  OPEN SOURCE  COMPONENTS,  THE 
-//	PROVISIONS OF  THE GOVERNING  OPEN SOURCE  LICENSE AGREEMENT  SHALL APPLY  WITH RESPECT TO SUCH 
-//	SOFTWARE DELIVERABLE. THE "COMPANY" DOES NOT WARRANT  THAT THE DELIVERABLES DO NOT INFRINGE ANY 
-//	THIRD PARTY INTELLECTUAL  PROPERTY RIGHT (IPR).  IN THE EVENT THAT THE  DELIVERABLES INFRINGE A 
-//	THIRD PARTY IPR IT IS THE SOLE RESPONSIBILITY OF THE "CUSTOMER" TO OBTAIN NECESSARY LICENSES TO 
+//	IN  THE  EVENT  THE  SOFTWARE  DELIVERABLE  INCLUDES THE  USE OF  OPEN SOURCE  COMPONENTS,  THE
+//	PROVISIONS OF  THE GOVERNING  OPEN SOURCE  LICENSE AGREEMENT  SHALL APPLY  WITH RESPECT TO SUCH
+//	SOFTWARE DELIVERABLE. THE "COMPANY" DOES NOT WARRANT  THAT THE DELIVERABLES DO NOT INFRINGE ANY
+//	THIRD PARTY INTELLECTUAL  PROPERTY RIGHT (IPR).  IN THE EVENT THAT THE  DELIVERABLES INFRINGE A
+//	THIRD PARTY IPR IT IS THE SOLE RESPONSIBILITY OF THE "CUSTOMER" TO OBTAIN NECESSARY LICENSES TO
 //	CONTINUE THE  USAGE OF THE DELIVERABLE.
 //
 //	"COMPANY" LICENSES "CUSTOMER"  THE RIGHT TO USE  THIS FILE FOR THE  SOLE PURPOSE  OF DEVELOPING

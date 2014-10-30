@@ -1,120 +1,165 @@
-/*****************************************************************************
-Copyright (C) 2011-12 Brigosha Technologies Private Limited
-Disclaimer		: 
- Common:
- Brigosha Technologies products are developed for the consumer goods industry. They may only be used 
- within the parameters of the respective valid product data sheet.  Brigosha Technologies products are 
- provided with the express understanding that there is no warranty of fitness for a particular purpose. 
- They are not fit for use in life-sustaining, safety or security sensitive systems or any system or device 
- that may lead to bodily harm or property damage if the system or device malfunctions.
-
-
- Special:
- This software module (hereinafter called "Software") and any information on application-sheets 
- (hereinafter called "Information") is provided free of charge for the sole purpose to support your 
- application work. The Software and Information is subject to the following terms and conditions: 
-
- The Software is specifically designed for the exclusive use for Brigosha Technologies products by 
- personnel who have special experience and training. Do not use this Software if you do not have the 
- proper experience or training. 
-
- This Software package is provided `` as is `` and without any expressed or implied warranties, 
- including without limitation, the implied warranties of merchantability and fitness for a particular 
- purpose. 
-
- Brigosha Technologies  deny any liability for the functional impairment of this Software in terms of
- fitness, performance and safety. Brigosha Technologies shall not be liable for any direct or indirect
- damages or injury.
- 
- The Information provided is believed to be accurate and reliable. Brigosha Technologies assumes no 
- responsibility for the consequences of use of such Information nor for any infringement of patents or 
- other rights of third parties which may result from its use. No license is granted by implication or 
- otherwise under any patent or patent rights of Brigosha Technologies. Specifications mentioned in the
- Information are subject to change without notice.
-
- It is not allowed to deliver the source code of the Software to any third party without permission of 
- Brigosha Technologies.
-
-****************************************************************************************************/ 
-/*****************************************************************************
- DESCRIPTION:   This project demonstrates how to use APIs form the
-                ELB_UART file to configure the UART Communciation.
-
- OUTPUT:        Received data from Hterm/hyperterminal on USB2UART port is sent back.
-                Communication is configured at 9600 - 8bit - No parity - 1 stop bit
-******************************************************************************/
-
-/***********DO NOT REMOVE **********/
-#define USE_AND_OR          // Macro to use Periheral Lib
-
-/* Default Oscillator setting is FRCDIV at 4MHZ
-   Enable below Macros for Various OSCILLATOR SELECTION */
-//#define OSC_PRIPLL_32MHZ
-//#define OSC_FRCPLL_16MHZ
-//#define OSC_SOSC_32KHZ
-//#define OSC_LPRC_31KHZ
-/***********DO NOT REMOVE **********/
-
-/*** MICROCHIP LIBRARY ***/
-#include <p24FJ256GB210.h>
-#include <pic24f_periph_features.h>
-#include <ports.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-/*** BRIGOSHA LIBRARY ***/
-#include "Define.h"
-//#include "CONFIGbits.h"
-
-#include "ELBv21_HardwareConfig.h"
-#include "ELB_OSC.h"
-#include "ELB_Timer.h"
-#include "ELB_UART.h"
-
-/*** EXTERNAL VARIABLES ***/
-extern ts_ELB_Hardware Hardware;                        //Hardware Global Structure
-extern U8 V_Rx1IntFlag_U8;                              //Interrupt Flag for UART1 recieve
-extern U8 V_Rx2IntFlag_U8;                                                        //set in ELB_ISR.c
-/*** GLOBAL VARIABLES ***/
-
-/*____________________________________________________________________________*/
-int d_main(void)
-{
-    /*** LOCAL VARIABLES ***/
-    U8 v_Rx1Data_U8=0;
-    U8 v_Rx2Data_U8=0;
-
-    /*** CONFIGURE OSCILLATOR ***/    
-    SET_FreqOsc( FRCDIV_1MHZ );                         //Set Frequency of 1MHZ
-    
-    /*** CONFIGURE HARDWARE ****/
-    Hardware_INIT();                                    //Initialise Hardware functions
-    Hardware.ConfigPins_Default();                      //Configure Default Hardware for ELB
-
-    /*** INITIALIZE PERIPHERAL ***/
-    UART1_INIT( M_9600Hz , M_BRGH_High , RX_INT_PRI1);  //Initialise UART1
-    UART2_INIT( M_9600Hz , M_BRGH_High , RX_INT_PRI2);
-    /*** APPLICATION CODE BEGINS ***/
-
-    /*** ENTER ETERNITY ***/
-    while(1)
-    {
-       // UART1 Recieve Interrupt Flag  variable (V_Rx1IntFlag_U8) is set in the Interrupt
-       // Service Routine, whenever a byte is recieved in UART1 buffer
-        if(V_Rx2IntFlag_U8)                             //Check if data available in UART buffer
-        {
-            V_Rx2IntFlag_U8 = 0;
-            v_Rx2Data_U8 = U2RXREG;                      //Read the value recieved in UART buffer
-            //UART1_SEND_String(& v_RxData_U8,1 );        //Return the received bytes to hterm
-            UART2_SEND_String(& v_Rx2Data_U8,1 );
-        }
-        if(V_Rx1IntFlag_U8)                             //Check if data available in UART buffer
-        {
-            V_Rx1IntFlag_U8 = 0;
-            v_Rx1Data_U8 = U1RXREG;                      //Read the value recieved in UART buffer
-            UART1_SEND_String(& v_Rx1Data_U8,1 );        //Return the received bytes to hterm
-            //UART2_SEND_String(& U2RXREG,1 );
-        }
-    }
-}
-/*____________________________________________________________________________*/
+//
+////	===============================================================================================
+////	PRODUCT:			---------- AVIX - (ADVANCED VIRTUAL INTEGRATED EXECUTIVE) RTOS ------------
+////	-----------------------------------------------------------------------------------------------
+//// 	PRODUCT VERSION: 	5.0
+//// 	COPYRIGHT:			AVIX-RT EMBEDDED SOLUTIONS
+////	LICENSE AGREEMENT:	SEE BOTTOM OF THIS FILE
+////	-----------------------------------------------------------------------------------------------
+////	MODULE:				THIS FILE BELONGS  TO THE BASIC AVIX TUTORIAL APPLICATION WHICH IS DISTRI-
+////						BUTED AS PART OF AVIX.  FOR A DESCRIPTION OF THIS TUTORIAL READ DOCUMENT
+////						AVIX_GettingStarted.pdf  WHICH IS INSTALLED  IN THE AVIX DOCUMENT DIRECTORY
+////	-----------------------------------------------------------------------------------------------
+////	FILENAME:			_tutorialMain.c
+////	-----------------------------------------------------------------------------------------------
+////	Description:
+////  ------------
+////	Main file of AVIX tutorial software. From this file the different tutorial application
+////	initialization functions are called. To activate a desired tutorial, uncomment the applicable
+////	function.
+////	===============================================================================================
+////	INCLUDES:
+////	===============================================================================================
+////
+//#include "AVIX.h"
+//
+///*** MICROCHIP LIBRARY ***/
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <p24FJ256GB210.h>
+//#include <pic24f_periph_features.h>
+//#include <ports.h>
+//
+//#include "adc.h"
+//
+///*** BRIGOSHA LIBRARY ***/
+//#include "Define.h"
+////#include "CONFIGbits.h"
+//
+//#include "ELBv21_HardwareConfig.h"
+//#include "ELB_OSC.h"
+//#include "ELB_I2C.h"
+//#include "ELB_LCD.h"
+//#include "ELB_PWM.h"
+//#include "ELB_Timer.h"
+//
+//
+//
+///*** EXTERNAL VARIABLES  ***/
+//extern  ts_ELB_Hardware Hardware;                   //Hardware Global Structure
+//
+//extern U8 V_T1IntFlag_U8;
+//
+////	-----------------------------------------------------------------------------------------------
+////	External function declarations.
+////	-----------------------------------------------------------------------------------------------
+//extern void systemSetup(void);
+//
+//
+//
+//
+//
+//
+//
+//
+////	===============================================================================================
+////	FUNCTION:	myErrorFunc
+////	=======================
+////	Central AVIX error handler. Set breakpoint at while loop to catch errors in development
+////	environment
+////	===============================================================================================
+////
+//void myErrorFunc(tavixErrorCode errorCode)
+//{
+//    printf("error\n");
+//	while(1);
+//}
+//
+//
+//
+////	===============================================================================================
+////	FUNCTION:	avixMain
+////	====================
+////	Main function for AVIX based project. From here specific selected tutorial function is called.
+////	===============================================================================================
+////
+//int astar_test_main();
+//
+//void avixMain(void)
+//{
+//	//---------------------------------------------------------------------------------------------
+//	// Setup the system and install an AVIX central error handler.
+//	//---------------------------------------------------------------------------------------------
+//	systemSetup();
+//	avixError_SetHandler(myErrorFunc);
+//
+//        /*** CONFIGURE OSCILLATOR ***/
+////    SET_FreqOsc( FRCDIV_250KHZ );               //Set frequency using macros from ELB Lib
+//
+//    /*** CONFIGURE HARDWARE ****/
+////     Hardware_INIT();                            //Initialise Hardware functions
+////     Hardware.ConfigPins_Default();              //Configure Default Hardware for ELB
+//
+//     /*** INITIALIZE PERIPHERAL ***/
+//     TIMER1_INIT( 1000, TMR_INT_PRI1 );          //Set Timer1, check the calculator in prog guide
+//                                                 //for available TimerTicks at Set Frequency
+//
+//
+//	//---------------------------------------------------------------------------------------------
+//	// Select the desired tutorial by setting the number of the desired tutorial in variable
+//	// tutorialId. This variable is set in the development environment watch window.
+//	//---------------------------------------------------------------------------------------------
+//     astar_test_main();
+//}
+//
+//
+//
+//
+////	===============================================================================================
+////	***********************************************************************************************
+////	===============================================================================================
+////	SOFTWARE LICENSE AGREEMENT
+////	--------------------------
+////
+////	THE  SOFTWARE  SUPPLIED  HEREWITH  AS  THE  CONTENT  OF  THIS FILE IS OWNED BY AVIX-RT EMBEDDED
+////	SOLUTIONS  (THE "COMPANY"), AND IS PROTECTED  UNDER APPLICABLE  COPYRIGHT LAWS.  ALL RIGHTS ARE
+////	RESERVED.  THE SOFTWARE IS SUPPLIED TO YOU (THE "CUSTOMER")  FOR USE  SOLELY AND EXCLUSIVELY AS
+////	PART OF AND TOGETHER WITH PRODUCTS MANUFACTURED BY "COMPANY" AND LICENSED TO "CUSTOMER".
+////
+////	THE SOFTWARE IS PROVIDED ON AN AS-IS BASIS WITHOUT  CHARGE AND IS SUBJECT TO ALTERATIONS. IT IS
+////	THE "CUSTOMERS" OBLIGATION TO FULLY TEST THE SOFTWARE IN ITS ENVIRONMENT AND TO  ENSURE  PROPER
+////	FUNCTIONALITY, QUALIFICATION AND COMPLIANCE WITH COMPONENT SPECIFICATIONS.
+////
+////	IN  THE  EVENT  THE  SOFTWARE  DELIVERABLE  INCLUDES THE  USE OF  OPEN SOURCE  COMPONENTS,  THE
+////	PROVISIONS OF  THE GOVERNING  OPEN SOURCE  LICENSE AGREEMENT  SHALL APPLY  WITH RESPECT TO SUCH
+////	SOFTWARE DELIVERABLE. THE "COMPANY" DOES NOT WARRANT  THAT THE DELIVERABLES DO NOT INFRINGE ANY
+////	THIRD PARTY INTELLECTUAL  PROPERTY RIGHT (IPR).  IN THE EVENT THAT THE  DELIVERABLES INFRINGE A
+////	THIRD PARTY IPR IT IS THE SOLE RESPONSIBILITY OF THE "CUSTOMER" TO OBTAIN NECESSARY LICENSES TO
+////	CONTINUE THE  USAGE OF THE DELIVERABLE.
+////
+////	"COMPANY" LICENSES "CUSTOMER"  THE RIGHT TO USE  THIS FILE FOR THE  SOLE PURPOSE  OF DEVELOPING
+////	APPLICATION SOFTWARE BASED ON ONE OF "COMPANIES" PRODUCTS AND FOR EXCLUSIVE USE ON A  SUPPORTED
+////	MICROCONTROLLER.
+////
+////	UNDER NO CIRCUMSTANCE  MAY THE CONTENT OF  THIS FILE,  EITHER PARTIALLY  OR COMPLETE,  BE  MADE
+////	PUBLIC, EITHER ELECTRONICALLY OR PRINTED.
+////
+////	ANY VIOLATION TO THE FOREGOING RESTRICTIONS  MAY SUBJECT THE USER  TO CRIMINAL SANCTIONS  UNDER
+////	APPLICABLE LAWS, AS WELL AS TO CIVIL  LIABILITY FOR  THE BREACH  OF THE TERMS AND CONDITIONS OF
+////	THIS LICENSE.
+////
+////	YOU SHOULD REFER TO THE LICENSE AGREEMENT  ACCOMPANYING THE  PRODUCT THIS  SOFTWARE IS  PART OF
+////	FOR ADDITIONAL INFORMATION REGARDING YOUR RIGHTS AND OBLIGATIONS.
+////
+////	THE SOFTWARE  AND DOCUMENTATION  ARE PROVIDED  "AS IS"  WITHOUT  WARRANTY  OF ANY  KIND, EITHER
+////	EXPRESS OR IMPLIED, INCLUDING WITHOUT  LIMITATION, ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR
+////	A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL "COMPANY" BE LIABLE FOR ANY
+////	INCIDENTAL, SPECIAL,  INDIRECT OR  CONSEQUENTIAL DAMAGES,  LOST PROFITS  OR LOST  DATA, COST OF
+////	PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY OR SERVICES, ANY CLAIMS BY THIRD PARTIES (INCLUDING
+////	BUT NOT  LIMITED TO ANY DEFENSE  THEREOF),  ANY CLAIMS  FOR  INDEMNITY OR CONTRIBUTION,OR OTHER
+////	SIMILAR COSTS, WHETHER ASSERTED ON THE BASIS OF  CONTRACT, TORT  (INCLUDING NEGLIGENCE), BREACH
+////	OF WARRANTY, OR OTHERWISE.
+////
+////	COPYRIGHT (C) 2006-2012 AVIX-RT EMBEDDED SOLUTIONS.  ALL RIGHTS RESERVED.
+////
+////	===============================================================================================
