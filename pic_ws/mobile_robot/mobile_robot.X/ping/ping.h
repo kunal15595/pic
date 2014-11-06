@@ -12,7 +12,9 @@
 extern "C" {
 #endif
 
-
+#include "AVIX.h"
+    
+TAVIX_THREAD_REGULAR ping_thread(void* p);
 
 
 #ifdef	__cplusplus

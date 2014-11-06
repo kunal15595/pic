@@ -12,7 +12,9 @@
 extern "C" {
 #endif
 
+#include "AVIX.h"
 
+TAVIX_THREAD_REGULAR motor_thread(void* p);
 
 
 #ifdef	__cplusplus

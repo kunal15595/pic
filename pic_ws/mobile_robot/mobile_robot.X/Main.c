@@ -8,7 +8,11 @@
 //Module wise includes
 #include "master.h"
 #include "astar_thread.h"
-
+#include "ping.h"
+#include "servo.h"
+#include "imu.h"
+#include "xbee.h"
+#include "motor.h"
 
 //	-----------------------------------------------------------------------------------------------
 //	External function declarations.
@@ -37,7 +41,6 @@ void myErrorFunc(tavixErrorCode errorCode)
 //	Main function for AVIX based project. From here specific selected tutorial function is called.
 //	===============================================================================================
 //
-int astar_test_main();
 
 
 void avixMain(void)
@@ -49,7 +52,9 @@ void avixMain(void)
      avixError_SetHandler(myErrorFunc);
      LED2_DIR = DIR_OUT;
      LED3_DIR = DIR_OUT;
-     avixExch_Create("global_storage", sizeof(struct global_storage), NULL);
-     avixThread_Create("master_thread", master_thread, NULL, 1,500L, AVIX_THREAD_READY);
-     avixThread_Create("astar_thread", astar_thread, NULL, 1, 500, AVIX_THREAD_READY);
+     avixThread_Create("master_thread", master_thread, NULL, 1,500, AVIX_THREAD_READY);
+     avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
+     avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);
+     avixThread_Create("servo_thread", servo_thread, NULL, 1,500, AVIX_THREAD_READY);
+     avixThread_Create("xbee_thread", xbee_thread, NULL, 1,500, AVIX_THREAD_READY);
 }

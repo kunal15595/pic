@@ -76,6 +76,8 @@ Disclaimer		:
 #include "ELB_I2C.h"
 #include "AMGPsensor.h"
 
+#include "imu.h"
+
 /*** EXTERNAL VARIABLES ***/
 extern ts_ELB_Hardware Hardware;                        //Hardware Global Structure
 extern ts_AMGPsensor AMGP;                              //Sensor Global Structure
@@ -121,5 +123,7 @@ int imu_main (void)
 }
 /*____________________________________________________________________________*/
 
-
+TAVIX_THREAD_REGULAR imu_thread(void* p){
+    while(1);
+}
 
