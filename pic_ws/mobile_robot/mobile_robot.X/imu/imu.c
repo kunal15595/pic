@@ -67,16 +67,15 @@ Disclaimer		:
 
 /*** BRIGOSHA LIBRARY ***/
 #include "Define.h"
-//#include "CONFIGbits.h"
-
 #include "ELBv21_HardwareConfig.h"
 #include "ELB_OSC.h"
 #include "ELB_Timer.h"
 #include "ELB_UART.h"
 #include "ELB_I2C.h"
 #include "AMGPsensor.h"
-
 #include "imu.h"
+
+#define PI 3.14159265358979323846
 
 /*** EXTERNAL VARIABLES ***/
 extern ts_ELB_Hardware Hardware;                        //Hardware Global Structure
@@ -86,44 +85,55 @@ extern U8 V_T23IntFlag_U8;                              //Set in TIMER ISR in fi
 /*** GLOBAL VARIABLES ***/
 F32 V_Pitch_F32 = 0;
 
+F32 direction;
+F32 degrees;
+
+S16 mag_x;
+S16 mag_y;
+S16 mag_z;
+
+
+U8 A_Str_U8[50];
 /*____________________________________________________________________________*/
-int imu_main (void)
+void imu_init (void)
 {
     /*** LOCAL VARIABLES ***/    
 
-    /*** CONFIGURE OSCILLATOR ***/
-//    SET_FreqOsc( FRCDIV_1MHZ );                         //Set frequency of 1 MHZ
-    
-    /*** CONFIGURE HARDWARE ****/
-//    Hardware_INIT();                                    //Initialise Hardware functions
-//    Hardware.ConfigPins_Default();                      //Configure Default Hardware for ELB
-
     /*** INITIALIZE PERIPHERAL ***/
-    TIMER23_INIT(100, TMR_INT_PRI1);                    //Proivde timer period in millisecond
-    UART1_INIT( M_9600Hz , M_BRGH_High , TX_INT_PRI0);  //Initialise UART1
-    I2C1_INIT(400000, MI2C_INT_PRI0 );                  //Inilialize I2C1
-
-    /*** APPLICATION CODE BEGINS ***/ 
-    AMGP_INIT(READ_HEADER1,SEND_UART1USB);              //Select Header to mount sensor card and...
-                                                        //...UART port to send data out (To be implemented, Modify this in AMGPSensor.h)
-    AMGP.Config(Acc|Mag|Gyro|Pres);                        //Select the sensors to work with eg.(Acc|Mag|Pres)
-    /*** ENTER ETERNITY ***/
-    while(1)
-    {
-        /*** READ SENSOR DATA AFTER TIMER PERIOD ELAPSED ***/
-        if(V_T23IntFlag_U8)                             // Timer period defined in the Timer init function...
-        {                                               // ...the timer interrupt flag is set in ELB_ISR.c
-            V_T23IntFlag_U8 = 0;                        // Clear the TIMER Interrupt flag variable
-            AMGP.Read(Acc|Mag|Gyro|Pres|TempPres);      // Read selected Sensors Data
-            AMGP.Send(Acc|Mag|Gyro|Pres|TempPres);      // Send sensors data Packet through selected UART
-
-            V_Pitch_F32 = atan(AMGP.Data.AccY/AMGP.Data.AccZ); // Use sensors Data perfrom calcualtions
-        }
-    }
+    I2C1_INIT(400000, MI2C_INT_PRI0 );
+    LCD_INIT();
+    AMGP_INIT(READ_HEADER1,SEND_UART1USB);
+    AMGP.Config(Mag);
 }
 /*____________________________________________________________________________*/
 
 TAVIX_THREAD_REGULAR imu_thread(void* p){
-    while(1);
+    imu_init();
+    while(1){
+        AMGP.Read(Mag);
+
+        mag_x = AMGP.Data.MagX;
+        mag_y = AMGP.Data.MagY;
+        mag_z = AMGP.Data.MagZ;
+
+        mag_y += 190;
+        mag_x -= 83;
+
+        direction = atan2(mag_y, mag_x) + PI;
+        degrees = direction * 180 / PI;
+
+        LCD_Clear();
+//        sprintf(A_Str_U8, "%d", mag_y); // Print variable to string
+//        LCD_WriteString(1, 8, A_Str_U8);
+//
+//        sprintf(A_Str_U8, "%d", mag_x); // Print variable to string
+//        LCD_WriteString(1, 1, A_Str_U8);
+
+        sprintf(A_Str_U8, "%f", degrees); // Print variable to string
+        LCD_WriteString(2, 12, A_Str_U8);
+
+        avixThread_Sleep(1000);
+
+    }
 }
 
