@@ -1,0 +1,259 @@
+
+SOFTWARE LICENSE AGREEMENT
+
+THIS IS A CONTRACT PLEASE READ IT CAREFULLY. THIS DOCUMENT IS A LEGAL AGREEMENT BETWEEN YOU (REFERRED TO AS “LICENSEE” IN THE REMAINDER OF THIS AGREEMENT) AN INDIVIDUAL OR LEGAL BUSINESS ENTITY ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW AND AVIX-RT (REFERRED TO AS “LICENSOR” IN THE REMAINDER OF THIS AGREEMENT) IN RELATION TO “LICENSOR” PROVIDED “SOFTWARE”. 
+
+THE TERM "SOFTWARE" MEANS THE “PRODUCT” NAMED AVIX, WHICH CONSISTS OF THE AVIX-RTOS (REAL TIME OPERATING SYSTEM) FOR USE ON A SINGLE “TARGET ARCHITECTURE” AND/OR “RELATED MATERIALS” OBTAINED BY MEANS AS SET OUT IN THIS AGREEMENT. THE TERM "SOFTWARE" DOES NOT INCLUDE ANY SOFTWARE THAT IS COVERED BY A SEPARATE LICENSE OFFERED OR GRANTED BY A PERSON OR ENTITY OTHER THAN LICENSOR.
+
+BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING THE “SOFTWARE”, YOU ACCEPT THE TERMS AND CONDITIONS SET FORTH IN THIS AGREEMENT AND DECLARE TO HAVE FULLY UNDERSTOOD AND ACCEPTED THE CONTENT OF THIS AGREEMENT THEREBY ACCEPTING THE LANGUAGE USED FOR THIS AGREEMENT IS ‘ENGLISH’  WHETHER OR NOT ‘ENGLISH’ IS YOUR NATIVE LANGUAGE.
+
+IF YOU DO NOT AGREE WITH ANY OF THE TERMS OR CONDITIONS OF THIS AGREEMENT, DO NOT PROCEED WITH THE DOWNLOADING, INSTALLING, COPYING, OR ANY OTHER USE OF THE “SOFTWARE” OR ANY PORTION THEREOF. THE “SOFTWARE” IS PROTECTED BY INTERNATIONAL COPYRIGHT LAWS, AS WELL AS OTHER INTELLECTUAL PROPERTY LAWS AND TREATIES.
+
+THE “SOFTWARE” IS LICENSED, NOT SOLD. THIS AGREEMENT DESCRIBES YOUR RIGHTS AND DUTIES WITH RESPECT TO THE “SOFTWARE”.
+
+
+1 DEFINITIONS
+
+The following terms have the meaning set forth below whenever they are used in this AGREEMENT:
+
+PRODUCT: The total of data files consisting of but not necessarily limited to static libraries, header files, object code, make files and/or scripts together offering the functionality of the product AVIX for use on a single TARGET ARCHITECTURE.
+
+DISTRIBUTION TYPE: Identification of PRODUCT capabilities. PRODUCT is distributed either as a Demo, Basic, Standard or Extended DISTRIBUTION.
+
+RELATED MATERIALS: The total of data files consisting of but not necessarily limited to executable programs dynamic libraries and/or documentation meant to support development of one or more APPLICATIONS based on and making use of PRODUCT. RELATED MATERIALS belong to PRODUCT and may not be used without PRODUCT and/or a valid LICENSE to use PRODUCT.
+
+SOFTWARE: PRODUCT and/or RELATED MATERIALS.
+
+SETUP PROGRAM: Single data file in the format of an executable program compatible for use with the Windows-XP operating system. A SETUP PROGRAM contains data files and/or internet links (URL’s) to data files present on LICENSOR’s website such that the combination of the contained data files and the linked data files form the total of data files SOFTWARE consists of.
+
+TARGET ARCHITECTURE: The family or group of embedded micro-controller and/or micro-processor devices belonging to one processor architecture, as uniquely defined by this architectures machine instruction set.
+
+APPLICATION: Computer program developed and owned by LICENSEE based on and using SOFTWARE, meant to be incorporated in end-products manufactured by LICENSEE.
+
+SITE: The physical premises of LICENSEE within the borders of one city located at a unique post address.
+
+
+2 LICENSE TYPES
+
+2.1 STANDARD LICENSE: A STANDARD LICENSE is subject to all conditions set forth in this AGREEMENT.
+
+2.2 FREE LICENSE: A FREE LICENSE is subject to the conditions set forth in this AGREEMENT with the following restrictions and exclusions:
+i) SOFTWARE, APPLICATIONS and/or products embedding APPLICATIONS may be used for the purpose of evaluation only.
+ii) Notwithstanding anything to the contrary elsewhere in this AGREEMENT, a FREE LICENSE does not allow LICENSEE to sell, distribute or ship APPLICATIONS and/or products embedding these APPLICATIONS.
+iii) Notwithstanding anything to the contrary elsewhere in this AGREEMENT, a FREE LICENSE does not require LICENSEE to be in possession of an invoice.
+iv) Notwithstanding anything to the contrary elsewhere in this AGREEMENT, a FREE LICENSE does not contain a ‘Support and Update Plan’ as defined in Article 11 and the clauses set forth in Article 11 and all references to Article 11 and/or the clauses set forth in Article 11 are to be considered void.
+v) Notwithstanding anything to the contrary elsewhere in this AGREEMENT, a FREE LICENSE has a duration of forty five (45) days after which this AGREEMENT is supposed to terminate and SOFTWARE may no longer be used.
+
+2.3 The type of license SOFTWARE is subject to is clearly marked in the SETUP PROGRAM(S) distributed to LICENSEE.
+
+
+3 DURATION OF LICENSE
+
+3.1 With explicit exclusion of the ‘Support and Update Plan’ (Article 11), the duration of this AGREEMENT is perpetual, commencing upon; 
+i) In case of online sales the date of downloading the SOFTWARE;
+ii) In case of direct sales the date of acceptance of the accompanying quotation, subject to the terms and conditions set out below;
+in particular the right of LICENSOR to terminate the AGREEMENT upon LICENSEE’s breach.
+
+3.2 This AGREEMENT is valid only in case LICENSEE is in possession of an invoice as a minimum for LICENSEE stating name, address and contact and for PRODUCT stating DISTRIBUTION TYPE and TARGET ARCHITECTURE.
+
+3.3 The duration of the ‘Support and Update Plan’ (Article 11) is for a bound period only, subject to conditions specified in Article 11.
+
+
+4 OWNERSHIP AND LICENSE GRANT
+
+4.1 LICENSOR holds the copyright, trade secrets and any other intellectual property rights which subsist in the licensed SOFTWARE and all copies thereof. No title or other rights in the Licensed SOFTWARE (other than rights expressly granted herein) shall pass to LICENSEE. This includes any enhancements and/or modifications made by LICENSOR to SOFTWARE and made available to LICENSEE, with or without charge during the duration of this AGREEMENT.
+THE SOFTWARE IS LICENSED, NOT SOLD, TO LICENSEE FOR USE ONLY UNDER THE TERMS OF THIS AGREEMENT. LICENSEE ACKNOWLEDGES THAT SOFTWARE CONSISTS OF PROPRIETARY, UNPUBLISHED MATERIAL OF LICENSOR, PROTECTED UNDER INTERNATIONAL COPYRIGHT AND TRADE SECRET LAWS.
+
+4.2 LICENSOR hereby grants a non-transferable and non-exclusive License for use of the SOFTWARE by LICENSEE, LICENSEE’s employees, subcontractors and/or other agents in performing services for LICENSEE provided all usage of SOFTWARE exclusively takes place on LICENSEE’s SITE. 
+
+4.3 No limitation is imposed on the number of (concurrent) users of SOFTWARE and LICENSEE is allowed to install SOFTWARE on as many computers as required for use by the effective number of users provided all computers SOFTWARE is installed and used on are located on LICENSEE’s SITE.
+
+4.4 LICENSEE may use the SOFTWARE to create one or more APPLICATIONS for a single TARGET ARCHITECTURE. The resulting APPLICATION(S), in binary form only, may be distributed or shipped embedded in LICENSEE’s own products free from royalty to LICENSOR. Any distribution or shipment of source code or code in linkable form (e.g. object code) derived from SOFTWARE is strictly prohibited.
+
+4.5 No restriction exists to the number of different APPLICATIONS based on SOFTWARE and/or the number of different products manufactured by LICENSEE these APPLICATIONS are used in.
+
+4.6 LICENSEE may make back-up copies of the SOFTWARE, only to be used in the event and to the extent that the original copy of the SOFTWARE fails to function, is lost, damaged or destroyed. LICENSEE warrants that no other copies of the SOFTWARE are made and will not allow, authorize or assist others to copy any part or all of the SOFTWARE in any form without the prior written approval of LICENSOR. There may be no more copies than are necessary to form part of a reasonable back-up cycle for LICENSEE. Back-up copies of the SOFTWARE may be kept by LICENSEE in a bank deposit or such other secure place as is normally used by LICENSEE for storage of its computer program back-ups. The rights for LICENSEE under this Section 4.6 shall not in any case include any measures to affect or decrease the function of the software protection included in the SOFTWARE.
+
+4.7 No source code of (part of) SOFTWARE is provided to LICENSEE under this AGREEMENT.
+
+
+5 LICENSE RESTRICTIONS
+
+5.1 LICENSEE may not remove, make emulation, reverse engineer, decompile, or disassemble (part of) the SOFTWARE. 
+
+5.2 LICENSEE may only ship SOFTWARE fully embedded in its APPLICATION(S) and not expose the interface of (part of) the SOFTWARE through these APPLICATION(S).
+
+5.3 LICENSEE is not allowed to derive the source or assembly code of (part of) the SOFTWARE provided to LICENSEE in executable or object formats.
+
+5.4 Regardless the format in which the APPLICATION is shipped, be it source code, binary code, linkable form or any other format where APPLICATION is distributed in the form of one or more data files, shipping source code or code in linkable form (e.g. object code) derived from the SOFTWARE together with APPLICATION is strictly prohibited.
+
+5.5 LICENSEE is strictly prohibited from adapting, modifying, revising, improving, upgrading, enhancing and creating derivative works of (part of) the SOFTWARE for any purpose including error correction or any other type of maintenance. 
+
+5.6 LICENSEE accepts that all information gained about (part of) the SOFTWARE is the valuable intellectual property of LICENSOR and as such must be treated as confidential as described in Article 7. 
+
+5.7 LICENSEE warrants that it will not sell, license, lease, rent, loan, lend, transmit, network, communicate or otherwise distribute or transfer (part of) the SOFTWARE in any manner to any third party whether on a permanent or temporary basis, except as explicitly stated in this AGREEMENT.
+
+5.8 LICENSEE warrants that it will not use or permit the use of (including without limitation by time sharing or network use) (part of) the SOFTWARE for the benefit of any entity other than the LICENSEE; or in a computer service business; make unauthorized copies of the documentation belonging to SOFTWARE; make verbal or media translations of this documentation; make telecommunications data transmissions of (part of) the SOFTWARE; use long-haul gateways on any central processing unit on which the SOFTWARE is used. 
+
+
+6 SOFTWARE DETAILS AND DELIVERY
+
+6.1 SOFTWARE is distributed to LICENSEE in the form of a SETUP PROGRAM. When executed the SETUP PROGRAM will guide and assist LICENSEE in installing the individual data files belonging to SOFTWARE on LICENSEE’s computer(s), this under conditions as stated in Article 4.
+
+6.2 Documentation belonging to SOFTWARE will be provided to LICENSEE in the form of files in the ‘Portable Document Format’ (.PDF).
+
+6.3 SOFTWARE is distributed either on physical media (CD), being made available for download from a web server or attached to an e-mail send by means of electronic message exchange. 
+
+6.4 All data files distributed to LICENSEE are combined in a single archive file (.ZIP) compatible with the .ZIP format being native to the Windows-XP operating system.
+
+6.5 LICENSEE is obliged to provide LICENSOR with a valid e-mail address to allow LICENSOR to fulfill the obligations forced by the ‘Support and Update Plan’ (Article 11). This e-mail address must belong to LICENSEE’s custom internet domain.
+
+6.6 LICENSEE is obliged to allow his electronic mail (e-mail) infrastructure to receive e-mail containing attachments in the .ZIP archive format as described in Section 6.4.
+
+6.7 LICENSEE is obliged to setup his network infrastructure such that the SETUP PROGRAM is allowed access to LICENSOR’s website for access to data files belonging to SOFTWARE referenced by the SETUP PROGRAM in the form of an internet link (URL).
+
+6.8 Failure by LICENSEE to comply with the content of Section 6.6 and/or Section 6.7 and/or Section 6.7 may result in LICENSOR being unable to fulfill the obligations set forth in this AGREEMENT. LICENSOR will not be liable for damages resulting from such failure.
+
+
+7 CONFIDENTIALITY
+
+LICENSEE agrees that all material and information relating to the SOFTWARE is made available for the use solely under and in accordance with this AGREEMENT. LICENSEE has no right at any time during or after cancellation or termination of this AGREEMENT to disclose such material and/or information relating to the SOFTWARE, whether directly or indirectly, to any third party without LICENSOR’s prior written approval. LICENSEE shall hold harmless, defend and indemnify LICENSOR from and against any and all losses, costs, damages and expenses arising out of or in connection with LICENSEE’s failure to comply with requirements of this Article 7. LICENSEE’s confidentiality obligations hereunder shall survive cancellation or termination for any reason of this AGREEMENT.
+
+
+8 PAYMENT PERIOD AND CONDITIONS
+
+8.1 In consideration of the rights granted and services rendered by LICENSOR or LICENSOR appointed distributor, under this AGREEMENT, LICENSEE shall pay the ‘License Fee’ equal to; 
+i) In case of direct sales: the value as stated on the applicable quotation and related invoice;
+ii) In case of online sales: the value as noted in the price list being part of the online sales system.
+No distribution or shipping of SOFTWARE as set out in Article 6 may take place before full payment has been made by LICENSEE.
+
+8.2 In consideration of the rights granted and services rendered by LICENSOR or LICENSOR appointed distributor, under this AGREEMENT, LICENSEE shall pay the ‘Support and Update Fee’ belonging to LICENSEE’s request for activation of a new ‘Support and Update Period’; 
+i) In case of direct sales: the value as stated on the applicable quotation and related invoice;
+ii) In case of online sales the value as noted in the price list being part of the online sales system;
+No updates of SOFTWARE as set out in Section 11.7 and/or support as set out in Section 11.8 may take place before full payment has been made by LICENSEE.
+
+8.3 Payment of the ‘License Fee’ and/or ‘Support and Update Fee’ is said to have taken place the moment LICENSOR or LICENSOR appointed distributor has received proof of payment of the total sum according the method of sales as noted in Section 8.1 and/or Section 8.2.
+
+8.4 If LICENSEE fails to effect payment within the stipulated time, LICENSOR or LICENSOR appointed distributor shall be entitled to;
+i) Charge interest after the due date as stated in the Invoice or in the payment conditions of the online sales system, whatever applicable as defined by the type of sales being direct or online;
+ii) Postpone the fulfillment of any of its own obligations until payment is made, and/or;
+iii) Terminate the AGREEMENT or the ‘Support and Update Plan’ as specified in Article 11, by notice in writing to the LICENSEE and recover from the LICENSEE any and all loss incurred.
+
+8.5 All prices are exclusive of and LICENSEE is responsible for all fees and taxes, including custom duties, importation fees, sales, use, withholding, gross revenue and like taxes, dues and charges assessed or incurred in connection with the provision of goods and services under this AGREEMENT.
+
+
+9 INTELLECTUAL PROPERTY INFRINGEMENT
+
+9.1 LICENSOR will in the way set out in Section 9.2, and subject to all limitations therein, act on any action brought against LICENSEE to the extent it is based on a claim that the SOFTWARE as it exists on the date of purchase infringes any patent or copyright duly issued under the laws of the country under which LICENSOR or LICENSEE is organized.
+
+9.2 LICENSOR shall in the way set out below as sole remedy act on a third party claim that the SOFTWARE infringe the intellectual property rights of such party provided that LICENSOR is given prompt notice of such claim and is given information, reasonable assistance and sole authority to defend or settle the claim. LICENSOR may at its option obtain the right for LICENSEE to continue using the infringing SOFTWARE, replace or modify the infringing SOFTWARE so it becomes non infringing, or if such replacement or modification is not reasonably available, terminate this AGREEMENT with respect to the infringing SOFTWARE and provide for a reasonable refund of fees paid by LICENSEE to LICENSOR or LICENSOR appointed distributor for the SOFTWARE so affected the value of which being subject to Section 9.3.
+
+9.3 LICENSOR shall not have any liability if the alleged infringement arises out of unauthorized use of the SOFTWARE in breach with this AGREEMENT, post-delivery, non-LICENSOR modifications, or the combination with other products or devices not furnished by LICENSOR.
+
+9.4 THE OBLIGATIONS STATED IN THIS SECTION ARE LICENSOR’s SOLE LIABILITIES AND LICENSEE’s SOLE REMEDIES FOR INFRINGEMENT OF PATENTS AND COPYRIGHTS. FOR THE AVOIDANCE OF DOUBT: THE LIABILITY OF LICENSOR UNDER THIS ARTICLE 9 MAY NEVER EXCEED THE LICENSE FEE PAID BY THE LICENSEE.
+
+
+10 FORCE MAJEURE
+
+Either party shall be excused from fulfillment of any obligation under this AGREEMENT only to the extent that and for so long as such performance is prevented or delayed by an industrial dispute or any other cause beyond its reasonable control, such as, but not limited to, riots; floods; war; warlike hostilities; fires; embargo; shortage of labor, power, fuel, means of transportation or common lack of other necessities. A party wishing to claim relief under this Article shall forthwith notify the other party in writing on the intervention and on the cessation of such circumstance.
+
+
+11 SUPPORT AND UPDATE PLAN
+
+11.1 For a bound period only, the ‘Support and Update Plan’ grants LICENSEE the right to receive Updates and/or Support on SOFTWARE, both period and rights being subject to the conditions stated in this Article.
+
+11.2 The ‘Support and Update Plan’ is valid for a bound period the duration of which being the sum of one (1) or more contiguous bound periods of one (1) year each, such a bound one (1) year period hereafter being called an active ‘Support and Update Period’. The initial ‘Support and Update Period’ becomes active the moment this AGREEMENT commences as defined in Article 3. Each then active ‘Support and Update Period’ is followed by another active ‘Support and Update Period’ under the conditions stated in Section 11.3.
+
+11.3 In case LICENSEE desires to activate another ‘Support and Update Period’, LICENSEE must inform LICENSOR of the desire to do so at least sixty (60) days before expiration of the then active ‘Support and Update Period’. After LICENSEE has informed LICENSOR of the desire to activate another ‘Support and Update Period’, LICENSOR will provide LICENSEE with a Quotation, acceptance of which by LICENSEE before expiration of the then active ‘Support and Update Period’ will activate a new ‘Support and Update Period’, provided LICENSEE will pay the ‘Support and Update Fee’ as mentioned in this Quotation and the related Invoice subject to payment conditions as mentioned in Article 8. The newly activated ‘Support and Update Period’ commences the date the then active ‘Support and Update Period’ ends.
+
+11.4 In case of failure of LICENSEE to inform LICENSOR of the desire to activate a new ‘Support and Update Period’ at least sixty (60) days before expiration of the then active ‘Support and Update Period’ or failure of LICENSEE to accept the Quotation provided by LICENSOR before the end of the then active ‘Support and Update Period’ the ‘Support and Update Plan’ is said to be expired in which case LICENSEE can no longer derive rights to this Article 11 and LICENSOR is no longer obliged to provide LICENSEE with Support and/or Updates.
+
+11.5 On expiration of the ‘Support and Update Plan’ as described in this Article 11, the remainder of this AGREEMENT shall continue in full force and effect.
+
+11.6 LICENSOR reserves the right to periodically revise the value of the ‘Support and Update Fee’ with an annual maximum of ten per cent (10%)
+
+11.7 Updates: From time to time LICENSOR may issue modified or enhanced versions of SOFTWARE, herein referred to as a "New Release". Under the explicit condition the ‘Support and Update Plan’ as specified in this Article is not expired, LICENSEE is provided with one (1) complete copy of such “New Release”. Following shipment of the “New Release” materials the previous release shall remain "current" for purposes hereof for a period of one (1) year thereafter only the “New Release” will be “current”. LICENSOR shall have no obligation hereunder to furnish LICENSEE with separately priced components to licensed SOFTWARE except as explicitly described in this AGREEMENT, unless LICENSEE has entered into an additional AGREEMENT for such separately priced SOFTWARE. LICENSOR shall continue to provide maintenance to the SOFTWARE so long as it continues to make the SOFTWARE commercially available.
+
+11.8 Support: Under the explicit condition the ‘Support and Update Plan’ as specified in this Article 11 is not expired, LICENSEE is entitled to: Inform LICENSOR of a failure LICENSEE has detected in SOFTWARE, herein called a “Defect”, either through electronic message (email) or telephone and upon receipt of such additional information as LICENSOR may request, LICENSOR will act in an expeditious manner to (attempt to) correct this “Defect” in a “current” release of SOFTWARE and provide LICENSEE with the corrected SOFTWARE. The maximum number of “Defects” LICENSOR will handle within the then active Support and Update Period’ is ten (10). LICENSOR is not obliged to perform investigation and/or correction of a “Defect” found to be present in another than a “current” release of SOFTWARE.
+
+
+12 LIMITED WARRANTY ON SOFTWARE DELIVERY FORMAT
+
+12.1 In case of shipment of SOFTWARE on physical media (CD) LICENSOR warrants that the media on which the SOFTWARE is recorded upon receipt by LICENSEE will be free from defects in materials and faulty workmanship under normal use for a period of ninety (90) days from the date of delivery to LICENSEE. During this warranty period LICENSOR will, at its option, after its receipt of the media in return, repair or replace, free of charge, defective media upon which the SOFTWARE was supplied and record a copy of the SOFTWARE on the repaired or replacement media. Said repair or replacement shall be LICENSEE’s exclusive remedy under this media warranty. Notwithstanding the foregoing, LICENSOR shall have no responsibility to repair or replace a media which, in LICENSOR’s opinion, has been damaged by LICENSEE by accident, abuse, or as a result of attempted self-maintenance service.
+
+12.2 LICENSOR warrants the data files provided to LICENSEE as a Delivery, be it on physical media be it through electronic message exchange (e-mail), to adhere to their respective formats (.ZIP, .EXE, .PDF) and be accessible as such. LICENSEE’s exclusive remedy under this Article 12 shall be to receive replacement copies of the applicable data files.
+
+
+13 DISCLAIMER OF WARRANTY
+
+13.1 THE SOFTWARE IS PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR DISCLAIMS ALL WARRANTIES AND CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO THE SOFTWARE, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES.
+
+13.2 LICENSOR DOES NOT WARRANT THAT THE SOFTWARE IS FIT FOR THE PURPOSE FOR WHICH LICENSEE INTENDS TO USE IT, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE WILL BE CORRECTED. FURTHERMORE, LICENSOR DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE SOFTWARE IN TERMS OF THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY LICENSOR OR AN AUTHORISED REPRESENTATIVE OF LICENSOR SHALL CREATE A WARRANTY OR IN ANY WAY INCREASE THE SCOPE OF THIS WARRANTY.
+
+
+14 LIMITATIONS OF LIABILITY
+
+14.1 THE USE OF THE SOFTWARE AND ALL CONSEQUENCES ARISING THEREFROM IS THE SOLE RESPONSIBILITY OF LICENSEE. LICENSOR SHALL NOT BE LIABLE TO LICENSEE FOR ANY LOSS OR DAMAGE CAUSED ARISING DIRECTLY OR INDIRECTLY IN CONNECTION WITH THE SOFTWARE, THE USE OF THE SOFTWARE OR OTHERWISE.
+
+14.2 LICENSOR’s LIABILITY VIS-À-VIS LICENSEE UNDER THIS AGREEMENT SHALL UNDER ALL CIRCUMSTANCES BE LIMITED TO FIFTY PER CENT (50%) OF THE LICENSE FEE FOR THE SOFTWARE PAID BY LICENSEE HEREUNDER, PROVIDED HOWEVER THAT IF ARTICLE 9 IS APPLICABLE THE TOTAL LIABILITY OF LICENSOR HEREUNDER MAY INSTEAD NEVER EXCEED ONEHUNDRED PERCENT (100%) OF THE LICENSE FEE PAID BY LICENSEE HEREUNDER FOR SUCH SOFTWARE.
+
+14.3 LICENSOR SHALL IN NO EVENT BE LIABLE TO LICENSEE UNDER THIS AGREEMENT FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES UNDER ANY LEGAL THEORY, SUCH AS LOSS OF DATA, USE AND/OR PROFITS, BUSINESS INTERRUPTION OR DOWNTIME COSTS AND CAPITAL COSTS OR CLAIM OF THIRD PARTY, WHETHER ON ACCOUNT OF DEFECTS, PERFORMANCES, NON-PERFORMANCES, DELAYS, PERSONAL INJURIES, PROPERTY DAMAGES OR OTHERWISE, REGARDLESS WHETHER LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+14.4 NOTHING IN THIS AGREEMENT SHALL EXCLUDE OR LIMIT THE LIABILITY UNDER APPLICABLE COMPULSORY LAW OF LICENSOR FOR DEATH OR PERSONAL INJURY RESULTING FROM ITS NEGLIGENCE.
+
+14.5 THE PROVISIONS OF THIS ARTICLE 14 SHALL SURVIVE THE CANCELLATION OR TERMINATION OF THIS AGREEMENT.
+
+
+15 HIGH RISK ACTIVITIES
+
+THE SOFTWARE IS NOT FAULT-TOLERANT AND IS NOT DESIGNED, MANUFACTURED OR INTENDED FOR USE IN ON-LINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE EQUIPMENT COULD LEAD DIRECTLY OR INDIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE ("HIGH RISK ACTIVITIES"). LICENSOR AND ITS SUPPLIERS SPECIFICALLY DISCLAIM ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+
+
+16 TERMINATION OF THE AGREEMENT
+
+16.1 LICENSOR shall have the right to terminate this AGREEMENT with immediate effect if LICENSEE is in breach of any of its obligations under this AGREEMENT, including, but not limited to: 
+i) Use of the SOFTWARE in any manner other than pursuant to the rights granted in Article 4 and restrictions specified in Article 5;
+ii) Breach of the confidentiality provisions of Article 7, or; 
+iii) Failure of LICENSEE to remit payments as provided in Article 8.
+
+16.2 This AGREEMENT will terminate immediately without notice if LICENSEE suspends its payments, becomes bankrupt or insolvent or enters into liquidation or otherwise can be regarded as insolvent.
+
+16.3 Upon LICENSOR’s termination of this AGREEMENT, as set out in this Article 16, then, LICENSOR may, at its option, and in addition to any other rights hereunder, and in addition to any other remedies available to LICENSOR under the law, in writing require LICENSEE to return or destroy all versions of the SOFTWARE and any and all documentation relating thereto on any media and in any form in LICENSEE’s possession. LICENSEE shall give a written confirmation to LICENSOR that all material related to the SOFTWARE and its operation has been returned to LICENSOR or destroyed. The provisions of this Section 16.3 shall survive the cancellation or termination of this AGREEMENT.
+
+
+17 EXPORT CONTROL REGULATION
+
+The SOFTWARE is subject to export or import regulations in various countries, including the regulations of the United States Export Administration Act. LICENSEE hereby agrees that LICENSEE will not knowingly;
+i) Export or re-export, directly or indirectly, any product or technical data or any controlled products restricted by applicable national regulations, including SOFTWARE, received from LICENSOR under this AGREEMENT;
+ii) Disclose such technical data for use in, or; 
+iii) Export or re-export, directly or indirectly, any direct product of such technical data or of such other controlled products, including SOFTWARE, to any destination to which such export or re-export is restricted or prohibited by U.S. or applicable non- U.S. law, without obtaining prior written consent of LICENSOR.
+
+
+18 MISCELLANEOUS
+
+18.1 This AGREEMENT shall not in any situation be assignable or transferable in whole or in part by either party, without the prior written approval of the other party. This notwithstanding, LICENSOR may assign this AGREEMENT without penalty or detriment to its rights under this AGREEMENT, and without LICENSEE’s prior written consent, in the event of a merger or similar reorganization or sale of substantially all of its assets.
+
+18.2 No alteration or amendment to this AGREEMENT shall be valid unless such alteration or amendment is made in writing and signed by the parties hereto.
+
+18.3 Any notice or other communication under this AGREEMENT shall be made in writing either by hand or by telefax (confirmed by airmail) or by certified or registered airmail first-class postage prepaid to the parties at the addresses stated in the Invoice (or at such other address a party may specify by written notice to the other).
+
+18.4 This AGREEMENT contains the entire understanding between the parties on its subject matter, and annuls and replaces any other agreements or understandings, whether written or oral, which may exist or have existed between the parties on the subject matter hereof.
+
+18.5 This AGREEMENT shall be governed by and construed in accordance with the substantive to the courts of the country in which LICENSOR is incorporated. Any dispute concerning this AGREEMENT or the interpretation or validity thereof, or any other dispute based thereon, shall be submitted to the courts of the country in which LICENSOR is incorporated.
+
+18.6 The provisions of this Article 18 shall survive the cancellation or termination of this AGREEMENT.
+
+18.7 If any provision of this AGREEMENT is held invalid, the remainder of this AGREEMENT shall continue in full force and effect.
+
+
+
+AVIX-RT
+Maïsveld 84
+5236 VC ’s-Hertogenbosch
+The Netherlands
+www.avix-rt.com
+
+Copyright © 2006-2010, AVIX-RT, All rights reserved
+Version 2.0
+August 29, 2010
+

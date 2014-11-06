@@ -1,0 +1,154 @@
+//
+////	===============================================================================================
+////	PRODUCT:			---------- AVIX - (ADVANCED VIRTUAL INTEGRATED EXECUTIVE) RTOS ------------
+////	-----------------------------------------------------------------------------------------------
+//// 	PRODUCT VERSION: 	5.0
+//// 	COPYRIGHT:			AVIX-RT EMBEDDED SOLUTIONS
+////	LICENSE AGREEMENT:	SEE BOTTOM OF THIS FILE
+////	-----------------------------------------------------------------------------------------------
+////	MODULE:				THIS FILE BELONGS  TO THE BASIC AVIX TUTORIAL APPLICATION WHICH IS DISTRI-
+////						BUTED AS PART OF AVIX.  FOR A DESCRIPTION OF THIS TUTORIAL READ DOCUMENT
+////						AVIX_GettingStarted.pdf  WHICH IS INSTALLED  IN THE AVIX DOCUMENT DIRECTORY
+////	-----------------------------------------------------------------------------------------------
+////	FILENAME:			_tutorialMain.c
+////	-----------------------------------------------------------------------------------------------
+////	Description:
+////  ------------
+////	Main file of AVIX tutorial software. From this file the different tutorial application
+////	initialization functions are called. To activate a desired tutorial, uncomment the applicable
+////	function.
+////	===============================================================================================
+////	INCLUDES:
+////	===============================================================================================
+////
+//#include "AVIX.h"
+//
+//
+//
+////	-----------------------------------------------------------------------------------------------
+////	External function declarations.
+////	-----------------------------------------------------------------------------------------------
+//extern void systemSetup(void);
+//
+//extern void t01RoundRobinScheduling(void);
+//extern void t02RoundRobinScheduling(void);
+//extern void t03Preemption(void);
+//extern void t04Timer(void);
+//extern void t05EventFlags(void);
+//extern void t06EventFlags(void);
+//extern void t07Messages(void);
+//extern void t08Pipes(void);
+//extern void t09Exchange(void);
+//
+//
+//
+////	-----------------------------------------------------------------------------------------------
+////	Global variables used by the different tutorial  applications. Read the tutorial application to
+////	learn what it does with these variables and watch the variables in the development environment
+////	watch window to observe the tutorial behavior. Variable tutorialId will hold the number of the
+////	selected tutorial.
+////	-----------------------------------------------------------------------------------------------
+volatile int	tutorialId;
+volatile long	thread1Var = 0;
+volatile long	thread2Var = 0;
+volatile long	thread3Var = 0;
+//
+//
+//
+////	===============================================================================================
+////	FUNCTION:	myErrorFunc
+////	=======================
+////	Central AVIX error handler. Set breakpoint at while loop to catch errors in development
+////	environment
+////	===============================================================================================
+////
+//void myErrorFunc(tavixErrorCode errorCode)
+//{
+//	while(1);
+//}
+//
+//
+//
+////	===============================================================================================
+////	FUNCTION:	avixMain
+////	====================
+////	Main function for AVIX based project. From here specific selected tutorial function is called.
+////	===============================================================================================
+////
+//void avixMain(void)
+//{
+//	//---------------------------------------------------------------------------------------------
+//	// Setup the system and install an AVIX central error handler.
+//	//---------------------------------------------------------------------------------------------
+//	systemSetup();
+//	avixError_SetHandler(myErrorFunc);
+//
+//
+//	//---------------------------------------------------------------------------------------------
+//	// Select the desired tutorial by setting the number of the desired tutorial in variable
+//	// tutorialId. This variable is set in the development environment watch window.
+//	//---------------------------------------------------------------------------------------------
+//	tutorialId = 4;
+//
+//	if (tutorialId ==  1)	{t01RoundRobinScheduling();	}
+//	if (tutorialId ==  2)	{t02RoundRobinScheduling();	}
+//	if (tutorialId ==  3)	{t03Preemption();			}
+//	if (tutorialId ==  4)	{t04Timer();				}
+//	if (tutorialId ==  5)	{t05EventFlags();			}
+//	if (tutorialId ==  6)	{t06EventFlags();			}
+//	if (tutorialId ==  7)	{t07Messages();				}
+//	if (tutorialId ==  8)	{t08Pipes();				}
+//	if (tutorialId ==  9)	{t09Exchange();				}
+//}
+//
+//
+//
+//
+////	===============================================================================================
+////	***********************************************************************************************
+////	===============================================================================================
+////	SOFTWARE LICENSE AGREEMENT
+////	--------------------------
+////
+////	THE  SOFTWARE  SUPPLIED  HEREWITH  AS  THE  CONTENT  OF  THIS FILE IS OWNED BY AVIX-RT EMBEDDED
+////	SOLUTIONS  (THE "COMPANY"), AND IS PROTECTED  UNDER APPLICABLE  COPYRIGHT LAWS.  ALL RIGHTS ARE
+////	RESERVED.  THE SOFTWARE IS SUPPLIED TO YOU (THE "CUSTOMER")  FOR USE  SOLELY AND EXCLUSIVELY AS
+////	PART OF AND TOGETHER WITH PRODUCTS MANUFACTURED BY "COMPANY" AND LICENSED TO "CUSTOMER".
+////
+////	THE SOFTWARE IS PROVIDED ON AN AS-IS BASIS WITHOUT  CHARGE AND IS SUBJECT TO ALTERATIONS. IT IS
+////	THE "CUSTOMERS" OBLIGATION TO FULLY TEST THE SOFTWARE IN ITS ENVIRONMENT AND TO  ENSURE  PROPER
+////	FUNCTIONALITY, QUALIFICATION AND COMPLIANCE WITH COMPONENT SPECIFICATIONS.
+////
+////	IN  THE  EVENT  THE  SOFTWARE  DELIVERABLE  INCLUDES THE  USE OF  OPEN SOURCE  COMPONENTS,  THE
+////	PROVISIONS OF  THE GOVERNING  OPEN SOURCE  LICENSE AGREEMENT  SHALL APPLY  WITH RESPECT TO SUCH
+////	SOFTWARE DELIVERABLE. THE "COMPANY" DOES NOT WARRANT  THAT THE DELIVERABLES DO NOT INFRINGE ANY
+////	THIRD PARTY INTELLECTUAL  PROPERTY RIGHT (IPR).  IN THE EVENT THAT THE  DELIVERABLES INFRINGE A
+////	THIRD PARTY IPR IT IS THE SOLE RESPONSIBILITY OF THE "CUSTOMER" TO OBTAIN NECESSARY LICENSES TO
+////	CONTINUE THE  USAGE OF THE DELIVERABLE.
+////
+////	"COMPANY" LICENSES "CUSTOMER"  THE RIGHT TO USE  THIS FILE FOR THE  SOLE PURPOSE  OF DEVELOPING
+////	APPLICATION SOFTWARE BASED ON ONE OF "COMPANIES" PRODUCTS AND FOR EXCLUSIVE USE ON A  SUPPORTED
+////	MICROCONTROLLER.
+////
+////	UNDER NO CIRCUMSTANCE  MAY THE CONTENT OF  THIS FILE,  EITHER PARTIALLY  OR COMPLETE,  BE  MADE
+////	PUBLIC, EITHER ELECTRONICALLY OR PRINTED.
+////
+////	ANY VIOLATION TO THE FOREGOING RESTRICTIONS  MAY SUBJECT THE USER  TO CRIMINAL SANCTIONS  UNDER
+////	APPLICABLE LAWS, AS WELL AS TO CIVIL  LIABILITY FOR  THE BREACH  OF THE TERMS AND CONDITIONS OF
+////	THIS LICENSE.
+////
+////	YOU SHOULD REFER TO THE LICENSE AGREEMENT  ACCOMPANYING THE  PRODUCT THIS  SOFTWARE IS  PART OF
+////	FOR ADDITIONAL INFORMATION REGARDING YOUR RIGHTS AND OBLIGATIONS.
+////
+////	THE SOFTWARE  AND DOCUMENTATION  ARE PROVIDED  "AS IS"  WITHOUT  WARRANTY  OF ANY  KIND, EITHER
+////	EXPRESS OR IMPLIED, INCLUDING WITHOUT  LIMITATION, ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR
+////	A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL "COMPANY" BE LIABLE FOR ANY
+////	INCIDENTAL, SPECIAL,  INDIRECT OR  CONSEQUENTIAL DAMAGES,  LOST PROFITS  OR LOST  DATA, COST OF
+////	PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY OR SERVICES, ANY CLAIMS BY THIRD PARTIES (INCLUDING
+////	BUT NOT  LIMITED TO ANY DEFENSE  THEREOF),  ANY CLAIMS  FOR  INDEMNITY OR CONTRIBUTION,OR OTHER
+////	SIMILAR COSTS, WHETHER ASSERTED ON THE BASIS OF  CONTRACT, TORT  (INCLUDING NEGLIGENCE), BREACH
+////	OF WARRANTY, OR OTHERWISE.
+////
+////	COPYRIGHT (C) 2006-2012 AVIX-RT EMBEDDED SOLUTIONS.  ALL RIGHTS RESERVED.
+////
+////	===============================================================================================
