@@ -94,6 +94,7 @@ S16 mag_z;
 
 
 U8 A_Str_U8[50];
+U8 blank_string[6] = "      ";
 /*____________________________________________________________________________*/
 void imu_init (void)
 {
@@ -101,7 +102,6 @@ void imu_init (void)
 
     /*** INITIALIZE PERIPHERAL ***/
     I2C1_INIT(400000, MI2C_INT_PRI0 );
-    LCD_INIT();
     AMGP_INIT(READ_HEADER1,SEND_UART1USB);
     AMGP.Config(Mag);
 }
@@ -122,13 +122,14 @@ TAVIX_THREAD_REGULAR imu_thread(void* p){
         direction = atan2(mag_y, mag_x) + PI;
         degrees = direction * 180 / PI;
 
-        LCD_Clear();
+//        LCD_Clear();
 //        sprintf(A_Str_U8, "%d", mag_y); // Print variable to string
 //        LCD_WriteString(1, 8, A_Str_U8);
 //
 //        sprintf(A_Str_U8, "%d", mag_x); // Print variable to string
 //        LCD_WriteString(1, 1, A_Str_U8);
 
+        LCD_WriteString(2, 12, blank_string);
         sprintf(A_Str_U8, "%f", degrees); // Print variable to string
         LCD_WriteString(2, 12, A_Str_U8);
 

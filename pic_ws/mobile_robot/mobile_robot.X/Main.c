@@ -53,6 +53,7 @@ void avixMain(void)
      //---------------------------------------------------------------------------------------------
      systemSetup();
      avixError_SetHandler(myErrorFunc);
+     LCD_INIT();
      LED2_DIR = DIR_OUT;
      LED3_DIR = DIR_OUT;
      avixExch_Create("map", HEIGHT*WIDTH*sizeof(uint8_t), NULL);

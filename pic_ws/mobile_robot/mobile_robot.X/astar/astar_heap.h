@@ -13,7 +13,7 @@ extern "C" {
 #endif
 
 #include <time.h>
-#include <stdint.h>
+#include "std_int.h"
 #include "astar_config.h"
 #include "Define.h"
 
