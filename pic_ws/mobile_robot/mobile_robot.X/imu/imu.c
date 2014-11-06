@@ -83,6 +83,7 @@ extern ts_AMGPsensor AMGP;                              //Sensor Global Structur
 extern U8 V_T23IntFlag_U8;                              //Set in TIMER ISR in file ELB_ISR.c
 
 /*** GLOBAL VARIABLES ***/
+tavixExchId ex_degrees;
 F32 V_Pitch_F32 = 0;
 
 F32 direction;
@@ -109,6 +110,7 @@ void imu_init (void)
 
 TAVIX_THREAD_REGULAR imu_thread(void* p){
     imu_init();
+    ex_degrees = avixExch_Get("degrees");
     while(1){
         AMGP.Read(Mag);
 
@@ -121,7 +123,8 @@ TAVIX_THREAD_REGULAR imu_thread(void* p){
 
         direction = atan2(mag_y, mag_x) + PI;
         degrees = direction * 180 / PI;
-
+        avixExch_Write(ex_degrees, (void *)&degrees);
+        avixExch_Read(ex_degrees,(void *)&degrees, NULL);
 //        LCD_Clear();
 //        sprintf(A_Str_U8, "%d", mag_y); // Print variable to string
 //        LCD_WriteString(1, 8, A_Str_U8);

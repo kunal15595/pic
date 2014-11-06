@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=astar/astar.c astar/astar_heap.c astar/astar_test.c astar/astar_thread.c astar/sys_time.c ../_avix_tutorial/src/_tutoriallMain.c ../_avix_tutorial/src/tutorial01_RoundRobin.c ../_avix_tutorial/src/tutorial02_RoundRobin.c ../_avix_tutorial/src/tutorial03_Preemption.c ../_avix_tutorial/src/tutorial04_Timer.c ../_avix_tutorial/src/tutorial05_EventFlags.c ../_avix_tutorial/src/tutorial06_EventFlags.c ../_avix_tutorial/src/tutorial07_Messages.c ../_avix_tutorial/src/tutorial08_Pipes.c ../_avix_tutorial/src/tutorial09_Exchange.c ../_AVIX/Cnfg/AVIXConfig.c ../sys_files/src/systemSetup.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_PWM.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c imu/imu.c motor/motor.c ping/ping.c servo/servo.c xbee/xbee.c Main.c master.c
+SOURCEFILES_QUOTED_IF_SPACED=astar/astar.c astar/astar_heap.c astar/astar_test.c astar/astar_thread.c astar/sys_time.c ../_AVIX/Cnfg/AVIXConfig.c Main.c master.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_PWM.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c motor/motor.c ping/ping.c servo/servo.c xbee/xbee.c ../sys_files/src/systemSetup.c ../_avix_tutorial/src/_tutoriallMain.c ../_avix_tutorial/src/tutorial01_RoundRobin.c ../_avix_tutorial/src/tutorial02_RoundRobin.c ../_avix_tutorial/src/tutorial03_Preemption.c ../_avix_tutorial/src/tutorial04_Timer.c ../_avix_tutorial/src/tutorial05_EventFlags.c ../_avix_tutorial/src/tutorial06_EventFlags.c ../_avix_tutorial/src/tutorial07_Messages.c ../_avix_tutorial/src/tutorial08_Pipes.c ../_avix_tutorial/src/tutorial09_Exchange.c imu/imu.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/astar/astar.o ${OBJECTDIR}/astar/astar_heap.o ${OBJECTDIR}/astar/astar_test.o ${OBJECTDIR}/astar/astar_thread.o ${OBJECTDIR}/astar/sys_time.o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o ${OBJECTDIR}/_ext/699472203/systemSetup.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/imu/imu.o ${OBJECTDIR}/motor/motor.o ${OBJECTDIR}/ping/ping.o ${OBJECTDIR}/servo/servo.o ${OBJECTDIR}/xbee/xbee.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/master.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/astar/astar.o.d ${OBJECTDIR}/astar/astar_heap.o.d ${OBJECTDIR}/astar/astar_test.o.d ${OBJECTDIR}/astar/astar_thread.o.d ${OBJECTDIR}/astar/sys_time.o.d ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d ${OBJECTDIR}/_ext/699472203/systemSetup.o.d ${OBJECTDIR}/elb/ELB_I2C.o.d ${OBJECTDIR}/elb/ELB_ISR.o.d ${OBJECTDIR}/elb/ELB_LCD.o.d ${OBJECTDIR}/elb/ELB_OSC.o.d ${OBJECTDIR}/elb/ELB_PWM.o.d ${OBJECTDIR}/elb/ELB_Timer.o.d ${OBJECTDIR}/elb/ELB_UART.o.d ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/imu/AMGPsensor.o.d ${OBJECTDIR}/imu/BMA150.o.d ${OBJECTDIR}/imu/BMP085.o.d ${OBJECTDIR}/imu/Config_Accel.o.d ${OBJECTDIR}/imu/Config_Gyro.o.d ${OBJECTDIR}/imu/Config_Mag.o.d ${OBJECTDIR}/imu/HMC5883.o.d ${OBJECTDIR}/imu/ITG3050.o.d ${OBJECTDIR}/imu/imu.o.d ${OBJECTDIR}/motor/motor.o.d ${OBJECTDIR}/ping/ping.o.d ${OBJECTDIR}/servo/servo.o.d ${OBJECTDIR}/xbee/xbee.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/master.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/astar/astar.o ${OBJECTDIR}/astar/astar_heap.o ${OBJECTDIR}/astar/astar_test.o ${OBJECTDIR}/astar/astar_thread.o ${OBJECTDIR}/astar/sys_time.o ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/master.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/motor/motor.o ${OBJECTDIR}/ping/ping.o ${OBJECTDIR}/servo/servo.o ${OBJECTDIR}/xbee/xbee.o ${OBJECTDIR}/_ext/699472203/systemSetup.o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ${OBJECTDIR}/imu/imu.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/astar/astar.o.d ${OBJECTDIR}/astar/astar_heap.o.d ${OBJECTDIR}/astar/astar_test.o.d ${OBJECTDIR}/astar/astar_thread.o.d ${OBJECTDIR}/astar/sys_time.o.d ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/master.o.d ${OBJECTDIR}/elb/ELB_I2C.o.d ${OBJECTDIR}/elb/ELB_ISR.o.d ${OBJECTDIR}/elb/ELB_LCD.o.d ${OBJECTDIR}/elb/ELB_OSC.o.d ${OBJECTDIR}/elb/ELB_PWM.o.d ${OBJECTDIR}/elb/ELB_Timer.o.d ${OBJECTDIR}/elb/ELB_UART.o.d ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/imu/AMGPsensor.o.d ${OBJECTDIR}/imu/BMA150.o.d ${OBJECTDIR}/imu/BMP085.o.d ${OBJECTDIR}/imu/Config_Accel.o.d ${OBJECTDIR}/imu/Config_Gyro.o.d ${OBJECTDIR}/imu/Config_Mag.o.d ${OBJECTDIR}/imu/HMC5883.o.d ${OBJECTDIR}/imu/ITG3050.o.d ${OBJECTDIR}/motor/motor.o.d ${OBJECTDIR}/ping/ping.o.d ${OBJECTDIR}/servo/servo.o.d ${OBJECTDIR}/xbee/xbee.o.d ${OBJECTDIR}/_ext/699472203/systemSetup.o.d ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d ${OBJECTDIR}/imu/imu.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/astar/astar.o ${OBJECTDIR}/astar/astar_heap.o ${OBJECTDIR}/astar/astar_test.o ${OBJECTDIR}/astar/astar_thread.o ${OBJECTDIR}/astar/sys_time.o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o ${OBJECTDIR}/_ext/699472203/systemSetup.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/imu/imu.o ${OBJECTDIR}/motor/motor.o ${OBJECTDIR}/ping/ping.o ${OBJECTDIR}/servo/servo.o ${OBJECTDIR}/xbee/xbee.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/master.o
+OBJECTFILES=${OBJECTDIR}/astar/astar.o ${OBJECTDIR}/astar/astar_heap.o ${OBJECTDIR}/astar/astar_test.o ${OBJECTDIR}/astar/astar_thread.o ${OBJECTDIR}/astar/sys_time.o ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/master.o ${OBJECTDIR}/elb/ELB_I2C.o ${OBJECTDIR}/elb/ELB_ISR.o ${OBJECTDIR}/elb/ELB_LCD.o ${OBJECTDIR}/elb/ELB_OSC.o ${OBJECTDIR}/elb/ELB_PWM.o ${OBJECTDIR}/elb/ELB_Timer.o ${OBJECTDIR}/elb/ELB_UART.o ${OBJECTDIR}/elb/ELBv21_HardwareConfig.o ${OBJECTDIR}/imu/AMGPsensor.o ${OBJECTDIR}/imu/BMA150.o ${OBJECTDIR}/imu/BMP085.o ${OBJECTDIR}/imu/Config_Accel.o ${OBJECTDIR}/imu/Config_Gyro.o ${OBJECTDIR}/imu/Config_Mag.o ${OBJECTDIR}/imu/HMC5883.o ${OBJECTDIR}/imu/ITG3050.o ${OBJECTDIR}/motor/motor.o ${OBJECTDIR}/ping/ping.o ${OBJECTDIR}/servo/servo.o ${OBJECTDIR}/xbee/xbee.o ${OBJECTDIR}/_ext/699472203/systemSetup.o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ${OBJECTDIR}/imu/imu.o
 
 # Source Files
-SOURCEFILES=astar/astar.c astar/astar_heap.c astar/astar_test.c astar/astar_thread.c astar/sys_time.c ../_avix_tutorial/src/_tutoriallMain.c ../_avix_tutorial/src/tutorial01_RoundRobin.c ../_avix_tutorial/src/tutorial02_RoundRobin.c ../_avix_tutorial/src/tutorial03_Preemption.c ../_avix_tutorial/src/tutorial04_Timer.c ../_avix_tutorial/src/tutorial05_EventFlags.c ../_avix_tutorial/src/tutorial06_EventFlags.c ../_avix_tutorial/src/tutorial07_Messages.c ../_avix_tutorial/src/tutorial08_Pipes.c ../_avix_tutorial/src/tutorial09_Exchange.c ../_AVIX/Cnfg/AVIXConfig.c ../sys_files/src/systemSetup.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_PWM.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c imu/imu.c motor/motor.c ping/ping.c servo/servo.c xbee/xbee.c Main.c master.c
+SOURCEFILES=astar/astar.c astar/astar_heap.c astar/astar_test.c astar/astar_thread.c astar/sys_time.c ../_AVIX/Cnfg/AVIXConfig.c Main.c master.c elb/ELB_I2C.c elb/ELB_ISR.c elb/ELB_LCD.c elb/ELB_OSC.c elb/ELB_PWM.c elb/ELB_Timer.c elb/ELB_UART.c elb/ELBv21_HardwareConfig.c imu/AMGPsensor.c imu/BMA150.c imu/BMP085.c imu/Config_Accel.c imu/Config_Gyro.c imu/Config_Mag.c imu/HMC5883.c imu/ITG3050.c motor/motor.c ping/ping.c servo/servo.c xbee/xbee.c ../sys_files/src/systemSetup.c ../_avix_tutorial/src/_tutoriallMain.c ../_avix_tutorial/src/tutorial01_RoundRobin.c ../_avix_tutorial/src/tutorial02_RoundRobin.c ../_avix_tutorial/src/tutorial03_Preemption.c ../_avix_tutorial/src/tutorial04_Timer.c ../_avix_tutorial/src/tutorial05_EventFlags.c ../_avix_tutorial/src/tutorial06_EventFlags.c ../_avix_tutorial/src/tutorial07_Messages.c ../_avix_tutorial/src/tutorial08_Pipes.c ../_avix_tutorial/src/tutorial09_Exchange.c imu/imu.c
 
 
 CFLAGS=
@@ -129,76 +129,6 @@ ${OBJECTDIR}/astar/sys_time.o: astar/sys_time.c  nbproject/Makefile-${CND_CONF}.
 	@${RM} ${OBJECTDIR}/astar/sys_time.o 
 	@${FIXDEPS} "${OBJECTDIR}/astar/sys_time.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/astar/sys_time.o.d" -o ${OBJECTDIR}/astar/sys_time.o astar/sys_time.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o: ../_avix_tutorial/src/_tutoriallMain.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.ok ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" -o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ../_avix_tutorial/src/_tutoriallMain.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o: ../_avix_tutorial/src/tutorial01_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ../_avix_tutorial/src/tutorial01_RoundRobin.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o: ../_avix_tutorial/src/tutorial02_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ../_avix_tutorial/src/tutorial02_RoundRobin.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o: ../_avix_tutorial/src/tutorial03_Preemption.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ../_avix_tutorial/src/tutorial03_Preemption.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o: ../_avix_tutorial/src/tutorial04_Timer.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ../_avix_tutorial/src/tutorial04_Timer.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o: ../_avix_tutorial/src/tutorial05_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ../_avix_tutorial/src/tutorial05_EventFlags.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o: ../_avix_tutorial/src/tutorial06_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ../_avix_tutorial/src/tutorial06_EventFlags.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o: ../_avix_tutorial/src/tutorial07_Messages.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ../_avix_tutorial/src/tutorial07_Messages.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o: ../_avix_tutorial/src/tutorial08_Pipes.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ../_avix_tutorial/src/tutorial08_Pipes.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o: ../_avix_tutorial/src/tutorial09_Exchange.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ../_avix_tutorial/src/tutorial09_Exchange.c     -fno-pcc-struct-return
-	
 ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o: ../_AVIX/Cnfg/AVIXConfig.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1950464967 
 	@${RM} ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d 
@@ -206,12 +136,19 @@ ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o: ../_AVIX/Cnfg/AVIXConfig.c  nbproject
 	@${RM} ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d" -o ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o ../_AVIX/Cnfg/AVIXConfig.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/_ext/699472203/systemSetup.o: ../sys_files/src/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/699472203 
-	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.d 
-	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.ok ${OBJECTDIR}/_ext/699472203/systemSetup.o.err 
-	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" -o ${OBJECTDIR}/_ext/699472203/systemSetup.o ../sys_files/src/systemSetup.c     -fno-pcc-struct-return
+${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Main.o.d 
+	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
+	@${RM} ${OBJECTDIR}/Main.o 
+	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/master.o: master.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/master.o.d 
+	@${RM} ${OBJECTDIR}/master.o.ok ${OBJECTDIR}/master.o.err 
+	@${RM} ${OBJECTDIR}/master.o 
+	@${FIXDEPS} "${OBJECTDIR}/master.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/master.o.d" -o ${OBJECTDIR}/master.o master.c     -fno-pcc-struct-return
 	
 ${OBJECTDIR}/elb/ELB_I2C.o: elb/ELB_I2C.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/elb 
@@ -325,13 +262,6 @@ ${OBJECTDIR}/imu/ITG3050.o: imu/ITG3050.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/imu/ITG3050.o 
 	@${FIXDEPS} "${OBJECTDIR}/imu/ITG3050.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/imu/ITG3050.o.d" -o ${OBJECTDIR}/imu/ITG3050.o imu/ITG3050.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/imu/imu.o: imu/imu.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/imu 
-	@${RM} ${OBJECTDIR}/imu/imu.o.d 
-	@${RM} ${OBJECTDIR}/imu/imu.o.ok ${OBJECTDIR}/imu/imu.o.err 
-	@${RM} ${OBJECTDIR}/imu/imu.o 
-	@${FIXDEPS} "${OBJECTDIR}/imu/imu.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/imu/imu.o.d" -o ${OBJECTDIR}/imu/imu.o imu/imu.c     -fno-pcc-struct-return
-	
 ${OBJECTDIR}/motor/motor.o: motor/motor.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/motor 
 	@${RM} ${OBJECTDIR}/motor/motor.o.d 
@@ -360,19 +290,89 @@ ${OBJECTDIR}/xbee/xbee.o: xbee/xbee.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/xbee/xbee.o 
 	@${FIXDEPS} "${OBJECTDIR}/xbee/xbee.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/xbee/xbee.o.d" -o ${OBJECTDIR}/xbee/xbee.o xbee/xbee.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/Main.o.d 
-	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
-	@${RM} ${OBJECTDIR}/Main.o 
-	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c     -fno-pcc-struct-return
+${OBJECTDIR}/_ext/699472203/systemSetup.o: ../sys_files/src/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/699472203 
+	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.d 
+	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.ok ${OBJECTDIR}/_ext/699472203/systemSetup.o.err 
+	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" -o ${OBJECTDIR}/_ext/699472203/systemSetup.o ../sys_files/src/systemSetup.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/master.o: master.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/master.o.d 
-	@${RM} ${OBJECTDIR}/master.o.ok ${OBJECTDIR}/master.o.err 
-	@${RM} ${OBJECTDIR}/master.o 
-	@${FIXDEPS} "${OBJECTDIR}/master.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/master.o.d" -o ${OBJECTDIR}/master.o master.c     -fno-pcc-struct-return
+${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o: ../_avix_tutorial/src/_tutoriallMain.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.ok ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" -o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ../_avix_tutorial/src/_tutoriallMain.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o: ../_avix_tutorial/src/tutorial01_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ../_avix_tutorial/src/tutorial01_RoundRobin.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o: ../_avix_tutorial/src/tutorial02_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ../_avix_tutorial/src/tutorial02_RoundRobin.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o: ../_avix_tutorial/src/tutorial03_Preemption.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ../_avix_tutorial/src/tutorial03_Preemption.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o: ../_avix_tutorial/src/tutorial04_Timer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ../_avix_tutorial/src/tutorial04_Timer.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o: ../_avix_tutorial/src/tutorial05_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ../_avix_tutorial/src/tutorial05_EventFlags.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o: ../_avix_tutorial/src/tutorial06_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ../_avix_tutorial/src/tutorial06_EventFlags.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o: ../_avix_tutorial/src/tutorial07_Messages.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ../_avix_tutorial/src/tutorial07_Messages.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o: ../_avix_tutorial/src/tutorial08_Pipes.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ../_avix_tutorial/src/tutorial08_Pipes.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o: ../_avix_tutorial/src/tutorial09_Exchange.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ../_avix_tutorial/src/tutorial09_Exchange.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/imu/imu.o: imu/imu.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/imu 
+	@${RM} ${OBJECTDIR}/imu/imu.o.d 
+	@${RM} ${OBJECTDIR}/imu/imu.o.ok ${OBJECTDIR}/imu/imu.o.err 
+	@${RM} ${OBJECTDIR}/imu/imu.o 
+	@${FIXDEPS} "${OBJECTDIR}/imu/imu.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/imu/imu.o.d" -o ${OBJECTDIR}/imu/imu.o imu/imu.c     -fno-pcc-struct-return
 	
 else
 ${OBJECTDIR}/astar/astar.o: astar/astar.c  nbproject/Makefile-${CND_CONF}.mk
@@ -410,76 +410,6 @@ ${OBJECTDIR}/astar/sys_time.o: astar/sys_time.c  nbproject/Makefile-${CND_CONF}.
 	@${RM} ${OBJECTDIR}/astar/sys_time.o 
 	@${FIXDEPS} "${OBJECTDIR}/astar/sys_time.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/astar/sys_time.o.d" -o ${OBJECTDIR}/astar/sys_time.o astar/sys_time.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o: ../_avix_tutorial/src/_tutoriallMain.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.ok ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" -o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ../_avix_tutorial/src/_tutoriallMain.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o: ../_avix_tutorial/src/tutorial01_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ../_avix_tutorial/src/tutorial01_RoundRobin.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o: ../_avix_tutorial/src/tutorial02_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ../_avix_tutorial/src/tutorial02_RoundRobin.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o: ../_avix_tutorial/src/tutorial03_Preemption.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ../_avix_tutorial/src/tutorial03_Preemption.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o: ../_avix_tutorial/src/tutorial04_Timer.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ../_avix_tutorial/src/tutorial04_Timer.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o: ../_avix_tutorial/src/tutorial05_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ../_avix_tutorial/src/tutorial05_EventFlags.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o: ../_avix_tutorial/src/tutorial06_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ../_avix_tutorial/src/tutorial06_EventFlags.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o: ../_avix_tutorial/src/tutorial07_Messages.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ../_avix_tutorial/src/tutorial07_Messages.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o: ../_avix_tutorial/src/tutorial08_Pipes.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ../_avix_tutorial/src/tutorial08_Pipes.c     -fno-pcc-struct-return
-	
-${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o: ../_avix_tutorial/src/tutorial09_Exchange.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.err 
-	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ../_avix_tutorial/src/tutorial09_Exchange.c     -fno-pcc-struct-return
-	
 ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o: ../_AVIX/Cnfg/AVIXConfig.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1950464967 
 	@${RM} ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d 
@@ -487,12 +417,19 @@ ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o: ../_AVIX/Cnfg/AVIXConfig.c  nbproject
 	@${RM} ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/1950464967/AVIXConfig.o.d" -o ${OBJECTDIR}/_ext/1950464967/AVIXConfig.o ../_AVIX/Cnfg/AVIXConfig.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/_ext/699472203/systemSetup.o: ../sys_files/src/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/699472203 
-	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.d 
-	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.ok ${OBJECTDIR}/_ext/699472203/systemSetup.o.err 
-	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" -o ${OBJECTDIR}/_ext/699472203/systemSetup.o ../sys_files/src/systemSetup.c     -fno-pcc-struct-return
+${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Main.o.d 
+	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
+	@${RM} ${OBJECTDIR}/Main.o 
+	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/master.o: master.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/master.o.d 
+	@${RM} ${OBJECTDIR}/master.o.ok ${OBJECTDIR}/master.o.err 
+	@${RM} ${OBJECTDIR}/master.o 
+	@${FIXDEPS} "${OBJECTDIR}/master.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/master.o.d" -o ${OBJECTDIR}/master.o master.c     -fno-pcc-struct-return
 	
 ${OBJECTDIR}/elb/ELB_I2C.o: elb/ELB_I2C.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/elb 
@@ -606,13 +543,6 @@ ${OBJECTDIR}/imu/ITG3050.o: imu/ITG3050.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/imu/ITG3050.o 
 	@${FIXDEPS} "${OBJECTDIR}/imu/ITG3050.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/imu/ITG3050.o.d" -o ${OBJECTDIR}/imu/ITG3050.o imu/ITG3050.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/imu/imu.o: imu/imu.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/imu 
-	@${RM} ${OBJECTDIR}/imu/imu.o.d 
-	@${RM} ${OBJECTDIR}/imu/imu.o.ok ${OBJECTDIR}/imu/imu.o.err 
-	@${RM} ${OBJECTDIR}/imu/imu.o 
-	@${FIXDEPS} "${OBJECTDIR}/imu/imu.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/imu/imu.o.d" -o ${OBJECTDIR}/imu/imu.o imu/imu.c     -fno-pcc-struct-return
-	
 ${OBJECTDIR}/motor/motor.o: motor/motor.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/motor 
 	@${RM} ${OBJECTDIR}/motor/motor.o.d 
@@ -641,19 +571,89 @@ ${OBJECTDIR}/xbee/xbee.o: xbee/xbee.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/xbee/xbee.o 
 	@${FIXDEPS} "${OBJECTDIR}/xbee/xbee.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/xbee/xbee.o.d" -o ${OBJECTDIR}/xbee/xbee.o xbee/xbee.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/Main.o.d 
-	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
-	@${RM} ${OBJECTDIR}/Main.o 
-	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c     -fno-pcc-struct-return
+${OBJECTDIR}/_ext/699472203/systemSetup.o: ../sys_files/src/systemSetup.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/699472203 
+	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.d 
+	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o.ok ${OBJECTDIR}/_ext/699472203/systemSetup.o.err 
+	@${RM} ${OBJECTDIR}/_ext/699472203/systemSetup.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/699472203/systemSetup.o.d" -o ${OBJECTDIR}/_ext/699472203/systemSetup.o ../sys_files/src/systemSetup.c     -fno-pcc-struct-return
 	
-${OBJECTDIR}/master.o: master.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/master.o.d 
-	@${RM} ${OBJECTDIR}/master.o.ok ${OBJECTDIR}/master.o.err 
-	@${RM} ${OBJECTDIR}/master.o 
-	@${FIXDEPS} "${OBJECTDIR}/master.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/master.o.d" -o ${OBJECTDIR}/master.o master.c     -fno-pcc-struct-return
+${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o: ../_avix_tutorial/src/_tutoriallMain.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.ok ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o.d" -o ${OBJECTDIR}/_ext/2107323874/_tutoriallMain.o ../_avix_tutorial/src/_tutoriallMain.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o: ../_avix_tutorial/src/tutorial01_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial01_RoundRobin.o ../_avix_tutorial/src/tutorial01_RoundRobin.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o: ../_avix_tutorial/src/tutorial02_RoundRobin.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial02_RoundRobin.o ../_avix_tutorial/src/tutorial02_RoundRobin.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o: ../_avix_tutorial/src/tutorial03_Preemption.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial03_Preemption.o ../_avix_tutorial/src/tutorial03_Preemption.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o: ../_avix_tutorial/src/tutorial04_Timer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial04_Timer.o ../_avix_tutorial/src/tutorial04_Timer.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o: ../_avix_tutorial/src/tutorial05_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial05_EventFlags.o ../_avix_tutorial/src/tutorial05_EventFlags.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o: ../_avix_tutorial/src/tutorial06_EventFlags.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial06_EventFlags.o ../_avix_tutorial/src/tutorial06_EventFlags.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o: ../_avix_tutorial/src/tutorial07_Messages.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial07_Messages.o ../_avix_tutorial/src/tutorial07_Messages.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o: ../_avix_tutorial/src/tutorial08_Pipes.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial08_Pipes.o ../_avix_tutorial/src/tutorial08_Pipes.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o: ../_avix_tutorial/src/tutorial09_Exchange.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/2107323874 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.ok ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.err 
+	@${RM} ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o.d" -o ${OBJECTDIR}/_ext/2107323874/tutorial09_Exchange.o ../_avix_tutorial/src/tutorial09_Exchange.c     -fno-pcc-struct-return
+	
+${OBJECTDIR}/imu/imu.o: imu/imu.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/imu 
+	@${RM} ${OBJECTDIR}/imu/imu.o.d 
+	@${RM} ${OBJECTDIR}/imu/imu.o.ok ${OBJECTDIR}/imu/imu.o.err 
+	@${RM} ${OBJECTDIR}/imu/imu.o 
+	@${FIXDEPS} "${OBJECTDIR}/imu/imu.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I"../_AVIX/Interface" -I"../_AVIX/Utilities/Interface" -I"elb" -I"astar" -I"imu" -I"motor" -I"ping" -I"servo" -I"xbee" -I"xc_32" -MMD -MF "${OBJECTDIR}/imu/imu.o.d" -o ${OBJECTDIR}/imu/imu.o imu/imu.c     -fno-pcc-struct-return
 	
 endif
 
