@@ -1,3 +1,6 @@
+#define WIDTH  20
+#define HEIGHT 20
+
 #include "AVIX.h"
 
 //#include "Define.h"
@@ -13,7 +16,7 @@
 #include "imu.h"
 #include "xbee.h"
 #include "motor.h"
-
+#include "std_int.h"
 //	-----------------------------------------------------------------------------------------------
 //	External function declarations.
 //	-----------------------------------------------------------------------------------------------
@@ -52,6 +55,7 @@ void avixMain(void)
      avixError_SetHandler(myErrorFunc);
      LED2_DIR = DIR_OUT;
      LED3_DIR = DIR_OUT;
+     avixExch_Create("map", HEIGHT*WIDTH*sizeof(uint8_t), NULL);
      avixThread_Create("master_thread", master_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);

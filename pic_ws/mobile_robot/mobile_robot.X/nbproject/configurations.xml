@@ -65,7 +65,7 @@
         <itemPath>xbee/xbee.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f8" displayName="xc_32" projectFiles="true">
-        <itemPath>../_avix_tutorial/_mplab_project_files/std_int.h</itemPath>
+        <itemPath>xc_32/std_int.h</itemPath>
       </logicalFolder>
       <itemPath>master.h</itemPath>
     </logicalFolder>
@@ -153,6 +153,7 @@
     <Elem>ping</Elem>
     <Elem>servo</Elem>
     <Elem>xbee</Elem>
+    <Elem>xc_32</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
