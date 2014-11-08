@@ -11,6 +11,10 @@ U8 A_Str_U8_1[50];
 U8 blank_string_1[6] = "      ";
 static struct coordinate current_pos_local,next_pos_local;
 
+void motor_init(){
+
+}
+
 TAVIX_THREAD_REGULAR motor_thread(void* p){
     while(1){
         IEC1bits.T5IE=0;
