@@ -38,7 +38,7 @@ This is an example of how to use libastar.
 #define NUM_WALLS (WIDTH * HEIGHT) / 100
 
 
-uint8_t map [WIDTH * HEIGHT];
+static uint8_t map [WIDTH * HEIGHT];
 
 
 #define MAP_FLOOR 0
@@ -67,7 +67,7 @@ char * map_chars = " X.SE";
 // COST_BLOCKED respectively. In this case we use a simple, two value
 // map with only perfectly passable and impenetrable blocks.
 
-uint8_t get_map_cost (const uint32_t x, const uint32_t y)
+static uint8_t get_map_cost (const uint32_t x, const uint32_t y)
 {
 	return get_map(x,y) == MAP_WALL ? COST_BLOCKED : 1;
 }
