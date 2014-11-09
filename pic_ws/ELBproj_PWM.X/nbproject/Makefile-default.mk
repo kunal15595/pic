@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=ELB_OSC.c ELB_PWM.c ELBv21_HardwareConfig.c Main.c
+SOURCEFILES_QUOTED_IF_SPACED=ELB_OSC.c ELB_PWM.c ELBv21_HardwareConfig.c Main.c ELB_Timer.c ELB_LCD.c ELB_I2C.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ELB_OSC.o ${OBJECTDIR}/ELB_PWM.o ${OBJECTDIR}/ELBv21_HardwareConfig.o ${OBJECTDIR}/Main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/ELB_OSC.o.d ${OBJECTDIR}/ELB_PWM.o.d ${OBJECTDIR}/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/Main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ELB_OSC.o ${OBJECTDIR}/ELB_PWM.o ${OBJECTDIR}/ELBv21_HardwareConfig.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/ELB_Timer.o ${OBJECTDIR}/ELB_LCD.o ${OBJECTDIR}/ELB_I2C.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/ELB_OSC.o.d ${OBJECTDIR}/ELB_PWM.o.d ${OBJECTDIR}/ELBv21_HardwareConfig.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/ELB_Timer.o.d ${OBJECTDIR}/ELB_LCD.o.d ${OBJECTDIR}/ELB_I2C.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/ELB_OSC.o ${OBJECTDIR}/ELB_PWM.o ${OBJECTDIR}/ELBv21_HardwareConfig.o ${OBJECTDIR}/Main.o
+OBJECTFILES=${OBJECTDIR}/ELB_OSC.o ${OBJECTDIR}/ELB_PWM.o ${OBJECTDIR}/ELBv21_HardwareConfig.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/ELB_Timer.o ${OBJECTDIR}/ELB_LCD.o ${OBJECTDIR}/ELB_I2C.o
 
 # Source Files
-SOURCEFILES=ELB_OSC.c ELB_PWM.c ELBv21_HardwareConfig.c Main.c
+SOURCEFILES=ELB_OSC.c ELB_PWM.c ELBv21_HardwareConfig.c Main.c ELB_Timer.c ELB_LCD.c ELB_I2C.c
 
 
 CFLAGS=
@@ -122,6 +122,27 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/Main.o 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c    
 	
+${OBJECTDIR}/ELB_Timer.o: ELB_Timer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/ELB_Timer.o.d 
+	@${RM} ${OBJECTDIR}/ELB_Timer.o.ok ${OBJECTDIR}/ELB_Timer.o.err 
+	@${RM} ${OBJECTDIR}/ELB_Timer.o 
+	@${FIXDEPS} "${OBJECTDIR}/ELB_Timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_Timer.o.d" -o ${OBJECTDIR}/ELB_Timer.o ELB_Timer.c    
+	
+${OBJECTDIR}/ELB_LCD.o: ELB_LCD.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/ELB_LCD.o.d 
+	@${RM} ${OBJECTDIR}/ELB_LCD.o.ok ${OBJECTDIR}/ELB_LCD.o.err 
+	@${RM} ${OBJECTDIR}/ELB_LCD.o 
+	@${FIXDEPS} "${OBJECTDIR}/ELB_LCD.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_LCD.o.d" -o ${OBJECTDIR}/ELB_LCD.o ELB_LCD.c    
+	
+${OBJECTDIR}/ELB_I2C.o: ELB_I2C.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/ELB_I2C.o.d 
+	@${RM} ${OBJECTDIR}/ELB_I2C.o.ok ${OBJECTDIR}/ELB_I2C.o.err 
+	@${RM} ${OBJECTDIR}/ELB_I2C.o 
+	@${FIXDEPS} "${OBJECTDIR}/ELB_I2C.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_I2C.o.d" -o ${OBJECTDIR}/ELB_I2C.o ELB_I2C.c    
+	
 else
 ${OBJECTDIR}/ELB_OSC.o: ELB_OSC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -150,6 +171,27 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/Main.o.ok ${OBJECTDIR}/Main.o.err 
 	@${RM} ${OBJECTDIR}/Main.o 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c    
+	
+${OBJECTDIR}/ELB_Timer.o: ELB_Timer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/ELB_Timer.o.d 
+	@${RM} ${OBJECTDIR}/ELB_Timer.o.ok ${OBJECTDIR}/ELB_Timer.o.err 
+	@${RM} ${OBJECTDIR}/ELB_Timer.o 
+	@${FIXDEPS} "${OBJECTDIR}/ELB_Timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_Timer.o.d" -o ${OBJECTDIR}/ELB_Timer.o ELB_Timer.c    
+	
+${OBJECTDIR}/ELB_LCD.o: ELB_LCD.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/ELB_LCD.o.d 
+	@${RM} ${OBJECTDIR}/ELB_LCD.o.ok ${OBJECTDIR}/ELB_LCD.o.err 
+	@${RM} ${OBJECTDIR}/ELB_LCD.o 
+	@${FIXDEPS} "${OBJECTDIR}/ELB_LCD.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_LCD.o.d" -o ${OBJECTDIR}/ELB_LCD.o ELB_LCD.c    
+	
+${OBJECTDIR}/ELB_I2C.o: ELB_I2C.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/ELB_I2C.o.d 
+	@${RM} ${OBJECTDIR}/ELB_I2C.o.ok ${OBJECTDIR}/ELB_I2C.o.err 
+	@${RM} ${OBJECTDIR}/ELB_I2C.o 
+	@${FIXDEPS} "${OBJECTDIR}/ELB_I2C.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/ELB_I2C.o.d" -o ${OBJECTDIR}/ELB_I2C.o ELB_I2C.c    
 	
 endif
 

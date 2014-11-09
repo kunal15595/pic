@@ -94,7 +94,7 @@ S16 mag_y;
 S16 mag_z;
 
 
-U8 A_Str_U8[50];
+U8 imu_lcd[50];
 U8 blank_string[6] = "      ";
 /*____________________________________________________________________________*/
 void imu_init (void)
@@ -133,8 +133,8 @@ TAVIX_THREAD_REGULAR imu_thread(void* p){
 //        LCD_WriteString(1, 1, A_Str_U8);
 
         LCD_WriteString(2, 12, blank_string);
-        sprintf(A_Str_U8, "%f", degrees); // Print variable to string
-        LCD_WriteString(2, 12, A_Str_U8);
+        sprintf(imu_lcd, "%f", degrees); // Print variable to string
+        LCD_WriteString(2, 12, imu_lcd);
 
         avixThread_Sleep(1000);
 

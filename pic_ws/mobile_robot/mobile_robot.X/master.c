@@ -9,7 +9,9 @@ astar_t *as;
 
 TAVIX_THREAD_REGULAR master_thread(void* p){
     astar_init();
-    while(1);
+    while(1){
+        avixThread_Relinquish();
+    }
 }
 
 void astar_init(){

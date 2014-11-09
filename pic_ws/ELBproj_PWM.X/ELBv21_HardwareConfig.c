@@ -29,13 +29,13 @@ void ConfigPins_ADC(U8 v_ADCUse_U8)
     if((v_ADCUse_U8&0x01) == 0x01)
     {
         TRISBbits.TRISB0 = DIR_IN;         	// Set ADC3 as Output
-	ANSBbits.ANSB0 = C_ON;             	// Enable analog function
+	ANSBbits.ANSB0 = C_OFF;             	// Enable analog function
     }
     /*** Configure ADC2 ***/
     if((v_ADCUse_U8&0x02) == 0x02)
     {
         TRISBbits.TRISB1 = DIR_IN;         	// Set ADC3 as Output
-	ANSBbits.ANSB1 = C_ON;             	// Enable analog function
+	ANSBbits.ANSB1 = C_OFF;             	// Enable analog function
     }
     /*** Configure ADC3 ***/
     if((v_ADCUse_U8&0x04) == 0x04)
@@ -106,9 +106,9 @@ void ConfigPins_PWM(U8 v_PWMUse_U8)
     /*** Configure PWM2 ***/
     if((v_PWMUse_U8&0x02) == 0x02)
     {
-	 PWM2_DIR = DIR_OUT;                            // Set PWM2 as Output
-	 PWM2 = C_OFF;                                  // Set state to OFF
-         iPPSOutput(OUT_PIN_PPS_RP2, OUT_FN_PPS_OC2);   //Assing OC1 to pin PWM1
+//	 PWM2_DIR = DIR_OUT;                            // Set PWM2 as Output
+//	 PWM2 = C_OFF;                                  // Set state to OFF
+//         iPPSOutput(OUT_PIN_PPS_RP2, OUT_FN_PPS_OC2);   //Assing OC1 to pin PWM1
     }
     /*** Configure PWM3 ***/
     if((v_PWMUse_U8&0x04) == 0x04)
@@ -309,7 +309,7 @@ void ConfigPins_Default(void)
     Hardware.ConfigPins_ADC(USE1|USE2|USE3|USE4);
     Hardware.ConfigPins_LED(USE1|USE2|USE3);
     Hardware.ConfigPins_Motor(USE1|USE2);
-    Hardware.ConfigPins_PWM(USE1|USE2|USE3|USE4);
+//    Hardware.ConfigPins_PWM(USE1|USE2|USE3|USE4);
     Hardware.ConfigPins_PB(USE1|USE2|USE3);
 
     Hardware.ConfigPins_UART1();
