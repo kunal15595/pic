@@ -16,7 +16,6 @@ extern "C" {
     
 TAVIX_THREAD_REGULAR imu_thread(void* p);
 
-
 #ifdef	__cplusplus
 }
 #endif

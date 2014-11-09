@@ -16,6 +16,10 @@
 #include "std_int.h"
 #include <stdbool.h>
 
+//
+#include "ELB_OSC.h"
+#include "ELB_PWM.h"
+
 
 //Global variables
 bool path_found;
@@ -41,8 +45,10 @@ void myErrorFunc(tavixErrorCode errorCode)
 }
 
 void peripherals_setup(){
-    TIMER2_INIT( 1000000, TMR_INT_PRI2 );
+//    TIMER2_INIT( 1000, TMR_INT_PRI2 );
+    ConfigPins_PWM(USE1 | USE3);
     T2CONbits.TCKPS = 01;
+    T2CON = 0x8000;
     LCD_INIT();
     LED2_DIR = DIR_OUT;
     LED3_DIR = DIR_OUT;
@@ -52,12 +58,12 @@ void peripherals_setup(){
     UART2_INIT(M_9600Hz, M_BRGH_High, RX_INT_PRI2);
 
     __builtin_write_OSCCONL(OSCCON & 0xbf);
-    iPPSInput(IN_FN_PPS_IC2, IN_PIN_PPS_RP22);
-    iPPSInput(IN_FN_PPS_IC1, IN_PIN_PPS_RP10);
-
+//    iPPSInput(IN_FN_PPS_IC2, IN_PIN_PPS_RP10);
+    iPPSInput(IN_FN_PPS_IC1, IN_PIN_PPS_RP22);
+//
     iPPSOutput(OUT_PIN_PPS_RP12, OUT_FN_PPS_OC1);
     iPPSOutput(OUT_PIN_PPS_RP11, OUT_FN_PPS_OC9);
-
+//
     __builtin_write_OSCCONL(OSCCON | 0x40);
 
     unsigned int config1;
@@ -67,12 +73,14 @@ void peripherals_setup(){
     ConfigIntCapture1(IC_INT_ON | IC_INT_PRIOR_2);
     ConfigIntCapture2(IC_INT_ON | IC_INT_PRIOR_3);
 
-    config1 = IC_IDLE_STOP | IC_TIMER2_SRC | IC_INT_1CAPTURE | IC_EVERY_RISE_EDGE;
+    config1 = IC_IDLE_STOP | IC_TIMER2_SRC | IC_INT_1CAPTURE | IC_EVERY_EDGE;
     config2 = IC_CASCADE_DISABLE /*| IC_SYNC_ENABLE | IC_SYNC_TRIG_IN_TMR2*/;
     OpenCapture1_GB(config1, config2);
-    config1 = IC_IDLE_STOP | IC_TIMER2_SRC | IC_INT_1CAPTURE | IC_EVERY_FALL_EDGE;
-    config2 = IC_CASCADE_DISABLE /*| IC_SYNC_ENABLE | IC_SYNC_TRIG_IN_TMR2*/;
-    OpenCapture2_GB(config1, config2);
+//    config1 = IC_IDLE_STOP | IC_TIMER2_SRC | IC_INT_1CAPTURE | IC_EVERY_FALL_EDGE;
+//    config2 = IC_CASCADE_DISABLE /*| IC_SYNC_ENABLE | IC_SYNC_TRIG_IN_TMR2*/;
+//    OpenCapture2_GB(config1, config2);
+
+    PWM1_INIT(PWMsrc_FOSC, 20);
 
 }
 
@@ -93,9 +101,7 @@ void avixMain(void)
      systemSetup();
      avixError_SetHandler(myErrorFunc);
      peripherals_setup();
-     
-     avixExch_Create("degrees", sizeof(F32), NULL);
-     avixExch_Create("map", HEIGHT*WIDTH*sizeof(uint8_t), NULL);
+//  LCD_INIT();
      
 ///////////////////////////////////////
      path_found=false;
@@ -111,5 +117,7 @@ void avixMain(void)
      avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("servo_thread", servo_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("xbee_thread", xbee_thread, NULL, 1,500, AVIX_THREAD_READY);
+//     avixThread_Create("ping_thread", ping_thread, NULL, 1,500, AVIX_THREAD_READY);
+
 }
 

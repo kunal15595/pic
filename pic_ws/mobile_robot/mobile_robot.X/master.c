@@ -38,8 +38,6 @@ static void map_print();
 TAVIX_THREAD_REGULAR master_thread(void* p){
     astar_init();
     while(1){
-<<<<<<< HEAD
-=======
         IEC1bits.T5IE=0;
         path_found_local=path_found;
         IEC1bits.T5IE=1;
@@ -70,7 +68,6 @@ TAVIX_THREAD_REGULAR master_thread(void* p){
                 }
             }
         }
->>>>>>> dc9eb9a6ed0d09ef7753652ebd30b9cb9a3531e0
         avixThread_Relinquish();
     }
 }

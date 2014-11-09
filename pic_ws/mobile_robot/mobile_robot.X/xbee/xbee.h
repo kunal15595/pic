@@ -26,8 +26,6 @@ extern "C" {
 #include "ELB_LCD.h"
 
 TAVIX_THREAD_REGULAR xbee_thread(void* p);
-<<<<<<< HEAD
-=======
 //
 //    // 7E000F1701000000000000FFFFFFFE02444264
 //    U8 com_atdb_broad[] = {0x7E, 0x00, 0x0F, 0x17, 0x01, 0x00, 0x00, 0x00, 0x00,
@@ -66,7 +64,6 @@ TAVIX_THREAD_REGULAR xbee_thread(void* p);
     // sample response ->
 
 
->>>>>>> dc9eb9a6ed0d09ef7753652ebd30b9cb9a3531e0
 #ifdef	__cplusplus
 }
 #endif

@@ -78,7 +78,7 @@ TAVIX_THREAD_REGULAR xbee_thread(void* p){
         avixTimer_Wait(timer_xbee_id);
 //        num_ticks = avixTimer_GetRemainingTicks(timer_xbee_id);
 //        M_ToggleIO(LED3);
-        
+
 //        LCD_WriteString(2, 1, blank_string);
         while(atdb_scan_index%100 != atdb_buf_index){
             // 7E 00 10 97 01 00 13 A2 00 40 AC C4 49 00 00 44 42 00 29 0A
@@ -126,24 +126,24 @@ avixDeclareISR(_U2RXInterrupt, no_auto_psv){
     U2RX_Clear_Intr_Status_Bit;
 }
 
-avixDeclareISR(_IC1Interrupt, no_auto_psv){
-    //        M_ToggleIO(LED3);
-//    LED3 = C_ON;
-    is_complete = 0;
-    ReadCapture1(&edge_buffer_up[temp_edge_index_1++]);
-    if (temp_edge_index_1 >= 200)temp_edge_index_1 = 0;
-
-//    IC1_Clear_Intr_Status_Bit;
-    IFS0bits.IC1IF = 0;
-}
-
-avixDeclareISR(_IC2Interrupt, no_auto_psv){
-    //        M_ToggleIO(LED3);
-    //    LED3 = C_ON;
-    is_complete = 1;
-    ReadCapture2(&edge_buffer_down[temp_edge_index_2++]);
-    if (temp_edge_index_2 >= 200)temp_edge_index_2 = 0;
-
-//    IC2_Clear_Intr_Status_Bit;
-    IFS0bits.IC2IF = 0;
-}
+//avixDeclareISR(_IC1Interrupt, no_auto_psv){
+//    //        M_ToggleIO(LED3);
+////    LED3 = C_ON;
+//    is_complete = 0;
+//    ReadCapture1(&edge_buffer_up[temp_edge_index_1++]);
+//    if (temp_edge_index_1 >= 200)temp_edge_index_1 = 0;
+//
+////    IC1_Clear_Intr_Status_Bit;
+//    IFS0bits.IC1IF = 0;
+//}
+//
+//avixDeclareISR(_IC2Interrupt, no_auto_psv){
+//    //        M_ToggleIO(LED3);
+//    //    LED3 = C_ON;
+//    is_complete = 1;
+//    ReadCapture2(&edge_buffer_down[temp_edge_index_2++]);
+//    if (temp_edge_index_2 >= 200)temp_edge_index_2 = 0;
+//
+////    IC2_Clear_Intr_Status_Bit;
+//    IFS0bits.IC2IF = 0;
+//}

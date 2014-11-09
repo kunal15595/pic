@@ -77,17 +77,19 @@ Disclaimer		:
 
 #define PI 3.14159265358979323846
 
+//Global variables
+F32 degrees;
+
 /*** EXTERNAL VARIABLES ***/
 extern ts_ELB_Hardware Hardware;                        //Hardware Global Structure
 extern ts_AMGPsensor AMGP;                              //Sensor Global Structure
 extern U8 V_T23IntFlag_U8;                              //Set in TIMER ISR in file ELB_ISR.c
 
 /*** GLOBAL VARIABLES ***/
-tavixExchId ex_degrees;
 F32 V_Pitch_F32 = 0;
 
 F32 direction;
-F32 degrees;
+F32 degrees_local;
 
 S16 mag_x;
 S16 mag_y;
@@ -110,7 +112,9 @@ void imu_init (void)
 
 TAVIX_THREAD_REGULAR imu_thread(void* p){
     imu_init();
-    ex_degrees = avixExch_Get("degrees");
+    IEC1bits.T5IE=0;
+    degrees_local = degrees;
+    IEC1bits.T5IE=1;
     while(1){
         AMGP.Read(Mag);
 
@@ -122,9 +126,10 @@ TAVIX_THREAD_REGULAR imu_thread(void* p){
         mag_x -= 83;
 
         direction = atan2(mag_y, mag_x) + PI;
-        degrees = direction * 180 / PI;
-        avixExch_Write(ex_degrees, (void *)&degrees);
-        avixExch_Read(ex_degrees,(void *)&degrees, NULL);
+        degrees_local = direction * 180 / PI;
+        IEC1bits.T5IE=0;
+        degrees=degrees_local;
+        IEC1bits.T5IE=1;
 //        LCD_Clear();
 //        sprintf(A_Str_U8, "%d", mag_y); // Print variable to string
 //        LCD_WriteString(1, 8, A_Str_U8);
@@ -133,7 +138,7 @@ TAVIX_THREAD_REGULAR imu_thread(void* p){
 //        LCD_WriteString(1, 1, A_Str_U8);
 
         LCD_WriteString(2, 12, blank_string);
-        sprintf(imu_lcd, "%f", degrees); // Print variable to string
+        sprintf(imu_lcd, "%f", degrees_local); // Print variable to string
         LCD_WriteString(2, 12, imu_lcd);
 
         avixThread_Sleep(1000);
