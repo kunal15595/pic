@@ -14,6 +14,13 @@
 #include "xbee.h"
 #include "motor.h"
 #include "std_int.h"
+#include <stdbool.h>
+
+
+//Global variables
+bool path_found;
+struct coordinate current_pos,next_pos,dest_pos;
+
 //	-----------------------------------------------------------------------------------------------
 //	External function declarations.
 //	-----------------------------------------------------------------------------------------------
@@ -89,6 +96,16 @@ void avixMain(void)
      
      avixExch_Create("degrees", sizeof(F32), NULL);
      avixExch_Create("map", HEIGHT*WIDTH*sizeof(uint8_t), NULL);
+     
+///////////////////////////////////////
+     path_found=false;
+     current_pos.x=0;
+     current_pos.y=0;
+     next_pos.x=0;
+     next_pos.y=0;
+     dest_pos.x=9;
+     dest_pos.y=9;
+//////////////////////////////////////////////
      avixThread_Create("master_thread", master_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);
