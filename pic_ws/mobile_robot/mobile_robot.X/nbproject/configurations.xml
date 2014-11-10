@@ -29,6 +29,7 @@
         <itemPath>../_AVIX/Interface/AVIXSemaphore.h</itemPath>
         <itemPath>../_AVIX/Interface/AVIXSharedDefs.h</itemPath>
         <itemPath>../_AVIX/Interface/AVIXThread.h</itemPath>
+        <itemPath>../_AVIX/SysDef/AVIXSystemSettings.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="elb" projectFiles="true">
         <itemPath>elb/CONFIGbits.h</itemPath>
@@ -154,6 +155,7 @@
     <Elem>servo</Elem>
     <Elem>xbee</Elem>
     <Elem>xc_32</Elem>
+    <Elem>../_AVIX/SysDef</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -320,6 +322,7 @@
         <property key="UART 3" value="true"/>
         <property key="UART 4" value="true"/>
         <property key="UCNFG1" value="true"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>

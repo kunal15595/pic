@@ -4,6 +4,7 @@
 #include "astar.h"
 #include <stdbool.h>
 #include <math.h>
+#include "ping.h"
 
 //Global variables
 extern bool path_found;
@@ -68,6 +69,7 @@ TAVIX_THREAD_REGULAR master_thread(void* p){
                 }
             }
         }
+//        ping();
         avixThread_Relinquish();
     }
 }

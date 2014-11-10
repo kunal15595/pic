@@ -47,8 +47,8 @@ void myErrorFunc(tavixErrorCode errorCode)
 void peripherals_setup(){
 //    TIMER2_INIT( 1000, TMR_INT_PRI2 );
     ConfigPins_PWM(USE1 | USE3);
-    T2CONbits.TCKPS = 01;
     T2CON = 0x8000;
+    T2CONbits.TCKPS = 01;
     LCD_INIT();
     LED2_DIR = DIR_OUT;
     LED3_DIR = DIR_OUT;
@@ -70,8 +70,8 @@ void peripherals_setup(){
     unsigned int config2;
 
     // input capture
-    ConfigIntCapture1(IC_INT_ON | IC_INT_PRIOR_2);
-    ConfigIntCapture2(IC_INT_ON | IC_INT_PRIOR_3);
+    ConfigIntCapture1(IC_INT_ON | IC_INT_PRIOR_4);
+//    ConfigIntCapture2(IC_INT_ON | IC_INT_PRIOR_3);
 
     config1 = IC_IDLE_STOP | IC_TIMER2_SRC | IC_INT_1CAPTURE | IC_EVERY_EDGE;
     config2 = IC_CASCADE_DISABLE /*| IC_SYNC_ENABLE | IC_SYNC_TRIG_IN_TMR2*/;
@@ -112,11 +112,11 @@ void avixMain(void)
      dest_pos.x=9;
      dest_pos.y=9;
 //////////////////////////////////////////////
-     avixThread_Create("master_thread", master_thread, NULL, 1,500, AVIX_THREAD_READY);
-     avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
-     avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);
+//     avixThread_Create("master_thread", master_thread, NULL, 1,500, AVIX_THREAD_READY);
+//     avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
+//     avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("servo_thread", servo_thread, NULL, 1,500, AVIX_THREAD_READY);
-     avixThread_Create("xbee_thread", xbee_thread, NULL, 1,500, AVIX_THREAD_READY);
+//     avixThread_Create("xbee_thread", xbee_thread, NULL, 1,500, AVIX_THREAD_READY);
 //     avixThread_Create("ping_thread", ping_thread, NULL, 1,500, AVIX_THREAD_READY);
 
 }

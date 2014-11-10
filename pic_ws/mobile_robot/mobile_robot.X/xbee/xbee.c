@@ -121,7 +121,7 @@ avixDeclareISR(_U2RXInterrupt, no_auto_psv){
         atdb_buf[atdb_buf_index++] = U2RXREG;
         if(atdb_buf_index==100)atdb_buf_index=0;
     }
-    LED2 = C_ON;
+//    LED2 = C_ON;
 //    read_atrp_signal = 1;
     U2RX_Clear_Intr_Status_Bit;
 }

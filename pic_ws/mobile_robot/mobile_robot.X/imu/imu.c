@@ -141,7 +141,7 @@ TAVIX_THREAD_REGULAR imu_thread(void* p){
         sprintf(imu_lcd, "%f", degrees_local); // Print variable to string
         LCD_WriteString(2, 12, imu_lcd);
 
-        avixThread_Sleep(1000);
+        avixThread_Sleep(10000);
 
     }
 }
