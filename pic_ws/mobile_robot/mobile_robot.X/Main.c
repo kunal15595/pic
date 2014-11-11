@@ -81,6 +81,8 @@ void peripherals_setup(){
 //    OpenCapture2_GB(config1, config2);
 
     PWM1_INIT(PWMsrc_FOSC, 20);
+    PWM3_DIR = DIR_OUT; // Set PWM4 as Output
+        PWM3 = C_OFF;
 
 }
 
@@ -113,7 +115,7 @@ void avixMain(void)
      dest_pos.y=9;
 //////////////////////////////////////////////
 //     avixThread_Create("master_thread", master_thread, NULL, 1,500, AVIX_THREAD_READY);
-//     avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
+     avixThread_Create("imu_thread", imu_thread, NULL, 1,500, AVIX_THREAD_READY);
 //     avixThread_Create("motor_thread", motor_thread, NULL, 1,500, AVIX_THREAD_READY);
      avixThread_Create("servo_thread", servo_thread, NULL, 1,500, AVIX_THREAD_READY);
 //     avixThread_Create("xbee_thread", xbee_thread, NULL, 1,500, AVIX_THREAD_READY);
